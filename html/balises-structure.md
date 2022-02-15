@@ -4,16 +4,12 @@
   <img src='img/Schema.png'  width='50%'>
 </p>
 
-`<header>`
-
-`<nav>`
-
-`<main>`
-
-`<section>`
-
-`<article>`
-
-`<aside>`
-
-`<footer>`
+| Balise      | Fonction                                         |
+| :---------- | :----------------------------------------------- |
+| `<header>`  |                                                  |
+| `<nav>`     |                                                  |
+| `<main>`    |                                                  |
+| `<section>` |                                                  |
+| `<article>` |                                                  |
+| `<aside>`   |                                                  |
+| `<footer>`  |                                                  |
