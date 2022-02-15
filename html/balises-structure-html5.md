@@ -1,4 +1,4 @@
-# Les Nouvelles Balise de Stucture avec HTML5
+# Les Nouvelles Balise de Stucture HTML5
 
 - Header
 - Nav
