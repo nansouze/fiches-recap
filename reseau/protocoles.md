@@ -4,7 +4,7 @@
 
 | Protocole | Définition                     | Commentaire                                                           |
 | :-------- | :----------------------------- | :-------------------------------------------------------------------- |
-| `TCP`     | Transmission Control Protocol  |                                                                       |
+| `TCP`     | Transmission Control Protocol  | 100% des paquets vont arriver                                         |
 | `UDP`     | User Datagram Protocol         | Peut perdre des données / très rapide, notamment pour les jeux vidéos |
 
 ## Les protocoles de haut niveau
