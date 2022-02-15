@@ -6,10 +6,10 @@
 
 ## Les protocoles de haut niveau
 
-![ssssssss](/ressources/Protocoles_Haut_Niveau.jpg)
+![ssssssss](ressources/Protocoles_Haut_Niveau.jpg)
 
 <p align="center">
-  <img src='/ressources/1-AWS-console.png'  width='100%'>
+  <img src='ressources/1-AWS-console.png'  width='100%'>
 </p>
 
 
