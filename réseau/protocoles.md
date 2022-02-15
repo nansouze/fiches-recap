@@ -7,7 +7,7 @@
 ## Les protocoles de haut niveau
 
 <p align="center">
-  <img src='../ressources/Protocoles_Haut_Niveau.jpg'  width='100%'>
+  <img src='ressources/Protocoles_Haut_Niveau.jpg'  width='100%'>
 </p>
 
 - **HTTP** -> Pour accéder à une page web
