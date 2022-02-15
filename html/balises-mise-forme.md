@@ -1,9 +1,25 @@
-# Balise de Mise en forme HTML5
+# Balise de Mise en Forme HTML5
 
-`Ctrl + /`
-- Nav
-- Main
-- Section
-- Article
-- Aside
-- Footer
+`<b>` -> Gras
+
+`<strong>` -> Mettre en valeur (moteurs de recherche)
+
+`<i>` -> Italic
+
+`<em>` -> Mettre en valeur (moteurs de recherche)
+
+`<pre>` -> Représenter à la perfection les espaces
+
+`<mark>` -> Mettre en valeur (surligner)
+
+`<del>` -> Supprimer
+
+`<ins>` -> Insérer
+
+`<u>` -> Souligner
+
+`<sub>` -> Mettre en-dessous
+
+`<sup>` -> Mettre au-dessus
+
+`<hr>` -> Trait horizontal
