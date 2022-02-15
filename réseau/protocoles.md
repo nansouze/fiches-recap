@@ -8,7 +8,9 @@
 
 ![ssssssss](ressources/Protocoles_Haut_Niveau.jpg)
 
-![ssssssss](ressources/1-AWS-console.png)
+<p align="center">
+  <img src='ressources/1-AWS-console.png'  width='100%'>
+</p>
 
 
 
