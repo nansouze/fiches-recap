@@ -6,7 +6,7 @@
 
 ## Les protocoles de haut niveau
 
-![](ressources/Protocoles_Haut_Niveau.jpg)
+![ssssssss](ressources/Protocoles_Haut_Niveau.jpg)
 
 - **HTTP** -> Pour accéder à une page web
 - **HTTPS** -> Pour accéder à une page web de manière sécurisée
