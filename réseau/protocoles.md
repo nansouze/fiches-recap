@@ -8,10 +8,6 @@
 
 ![](ressources/Protocoles_Haut_Niveau.jpg)
 
-</details>
-
-![](ressources/Protocoles_Haut_Niveau.jpg)
-
 - **HTTP** -> Pour accéder à une page web
 - **HTTPS** -> Pour accéder à une page web de manière sécurisée
 - **FTP** -> Pour échanger des fichiers
