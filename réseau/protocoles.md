@@ -10,7 +10,11 @@
   <img src='ressources/Protocoles_Haut_Niveau.jpg'  width='100%'>
 </p>
 
-![ffffffffff](ressources/Protocoles_Haut_Niveau.jpg)
+<details>
+
+![](ressources/Protocoles_Haut_Niveau.jpg)
+
+</details>
 
 - **HTTP** -> Pour accéder à une page web
 - **HTTPS** -> Pour accéder à une page web de manière sécurisée
