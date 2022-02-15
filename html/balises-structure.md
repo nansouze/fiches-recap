@@ -1,7 +1,7 @@
 # Les Nouvelles Balise de Stucture
 
 <p align="center">
-  <img src='img/Schema.png'  width='30%'>
+  <img src='img/Schema.png'  width='50%'>
 </p>
 
 `<header>`
