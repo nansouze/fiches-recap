@@ -1,4 +1,4 @@
-# Balise de Mise en Forme HTML5
+# Balise de Mise en Forme
 
 `<b>` -> Gras
 
