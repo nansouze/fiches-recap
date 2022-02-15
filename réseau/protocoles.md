@@ -6,12 +6,6 @@
 
 ## Les protocoles de haut niveau
 
-<p align="center">
-  <img src='ressources/Protocoles_Haut_Niveau.jpg'  width='100%'>
-</p>
-
-<details>
-
 ![](ressources/Protocoles_Haut_Niveau.jpg)
 
 </details>
@@ -22,5 +16,3 @@
 - **HTTPS** -> Pour accéder à une page web de manière sécurisée
 - **FTP** -> Pour échanger des fichiers
 - **SMTP** -> Pour envoyer des emails
-
-testttttttttttttttttt
