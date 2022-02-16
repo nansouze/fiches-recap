@@ -13,6 +13,12 @@
     font-style: italic;
 }
 
+/* UNIVERSEL */
+* {
+    box-sizing: border-box;
+}
+
+
 /* BODY */
 body {
     font-family: 'Roboto', sans-serif;
