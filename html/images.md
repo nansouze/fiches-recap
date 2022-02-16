@@ -22,7 +22,7 @@ La figure, sa légende et son contenu sont référencés comme une seule unité.
 
 ```
 
-## Les Favicons (ou Icônes) `head`
+## Les Favicons (ou Icônes) `<head>`
 
 ```html
 
