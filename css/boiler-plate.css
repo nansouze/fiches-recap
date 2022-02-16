@@ -1,5 +1,11 @@
-/* FONTS */
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* PERSONALIZED FONTS */
+@font-face {
+    font-family: 'Beauty Mermaid';
+    src: url('assets/fonts/beauty_mermaid.ttf');
+}
 
 /* BODY */
 body {
