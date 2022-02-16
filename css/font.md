@@ -17,7 +17,7 @@
 https://fonts.google.com/ propose une grande quantité de fonts facilement utilisables.
 
 1. Selectionner au moins une font
-2. `CUSTOMIZE` permet de choisir les styles voulus (si la font en possède plusieurs)
+2. `SELECT THIS STYLE` permet de choisir les styles voulus (si la font en possède plusieurs)
 3. `EMBED` permet de choisir entre 2 modes d'insertion
     - `<link>` à placer dans le HTML
     - `@import` à placer dans le CSS
