@@ -26,6 +26,16 @@ La figure, sa légende et son contenu sont référencés comme une seule unité.
 
 ```html
 
-<link rel="shortcut icon" href="images/flamme_profile.png" type="image/png" />
+<link rel="shortcut icon" href="favicon.png" type="image/png">
 
 ```
+
+ou
+
+```html
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+```
+
+
