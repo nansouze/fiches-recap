@@ -7,6 +7,12 @@
     src: url('assets/fonts/beauty_mermaid.ttf');
 }
 
+@font-face {
+    font-family: 'Beauty Mermaid';
+    src: url('assets/fonts/beauty_mermaid_italic.ttf');
+    font-style: italic;
+}
+
 /* BODY */
 body {
     font-family: 'Roboto', sans-serif;
