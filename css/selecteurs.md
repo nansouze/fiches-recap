@@ -99,11 +99,72 @@ img ~ p {
 
 ```css
 
-/* Les éléments <li> qui sont des descendants */
-/* d'un <ul class="mon-truc"> */
+/* Les éléments <li> qui sont des descendants d'un <ul class="mon-truc"> */
 
 ul.mon-truc li {
   margin: 2em;
 }
 
 ````
+
+## Les Pseudo-Classes
+
+Les [pseudo-classes](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes) permettent de cibler des éléments selon une information d'état qui n'est pas stockée dans l'arbre du document.
+
+`:hover`
+
+```css
+
+/* Cible n'importe quel élément <a> lorsque celui-ci est survolé */
+
+a:hover {
+  background-color: gold;
+}
+
+```
+
+`:active`
+
+```css
+
+/* Ne cible <a> que lorsqu'il est activé par exemple quand on clique dessus */
+
+a:active {
+  color: red;
+}
+
+```
+
+`:link`
+
+```css
+
+/* Cible les liens qui n'ont pas encore été visités */
+
+a:link {
+  color: red;
+}
+
+```
+
+`:visited`
+
+```css
+
+a:visited {
+  color: #4b2f89;
+}
+
+```
+
+`:focus`
+
+```css
+
+/* Cible n'importe quel élément <input> uniquement lorsqu'il a le focus */
+
+input:focus {
+  color: red;
+}
+
+```
