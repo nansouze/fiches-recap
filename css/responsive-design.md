@@ -2,6 +2,10 @@
 
 ## Media Queries
 
+<p align="center">
+  <img src='img/Responsive_1.png'  width='100%'>
+</p>
+
 ```css
 
 /* MEDIA QUERIES */
@@ -29,3 +33,6 @@
 
 ```
 
+<p align="center">
+  <img src='img/Responsive_2.png'  width='100%'>
+</p>
