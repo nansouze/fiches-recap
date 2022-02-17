@@ -38,3 +38,12 @@
 <p align="center">
   <img src='img/Responsive_2.png'  width='100%'>
 </p>
+
+## Unités
+
+| Unité	    | Relative à                                                           | 
+| :-------- | :------------------------------------------------------------------- | 
+| `em`      |  la taille de la police de l'élément parent                          |
+| `rem`     |  la taille de la police de l'élément racine (standard du navigateur) |
+| `vh`      |  1% de la hauteur du viewport (la zone d'affichage)                  |
+| `vw`      |  1% de la largeur du viewport (la zone d'affichage)                  |
