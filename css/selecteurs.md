@@ -168,3 +168,40 @@ input:focus {
 }
 
 ```
+
+`:first-of-type`
+
+```css
+
+/* Cible le premier élément <p> d'un type donné parmi ses éléments voisins */
+
+p:first-of-type {
+  color: red;
+}
+
+```
+
+`:last-of-type`
+
+```css
+
+/* Cible n'importe quel paragraphe qui est le dernier paragraphe de son élément parent */
+
+p:last-of-type {
+  color: lime;
+}
+
+```
+
+`:nth-of-type`
+
+```css
+
+/* Sélectionne chaque élément de type <p> dont la position parmi l'ensemble des éléments de type <p>
+descendants directement du même élément parent, est un multiple de 4. */
+
+p:nth-of-type(4n) {
+  color: lime;
+}
+
+```
