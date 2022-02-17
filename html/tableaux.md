@@ -1,6 +1,8 @@
 # Les tableaux
 
-![Tableur](img/tableur.png)
+<p align="center">
+  <img src='img/Tableaur.png'  width='100%'>
+</p>
 
 ## Syntaxe
 
