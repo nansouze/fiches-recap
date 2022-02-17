@@ -15,6 +15,8 @@
 
 /* UNIVERSEL */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -28,4 +30,27 @@ body {
 .container {
     margin: 0 auto;
     width: 1000px;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
 }
