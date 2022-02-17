@@ -31,6 +31,8 @@
   }
 }
 
+/* Pour faire disparaitre un element -> display: none; */
+
 ```
 
 <p align="center">
