@@ -195,121 +195,72 @@ Il est possible de rassembler le contenu de certaines lignes ou cellules en les 
 - `colspan` fusionne des cellules entre elles
 
 <table>
-  <tr>
-    <th colspan="3">AC/DC dans les charts Australiens</th>
-  </tr>
-  <tr>
-    <th rowspan="4">1976</th>
-    <td>19</td>
-    <td>T.N.T.</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>It's a Long Way to the Top</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Jailbreak</td>
-  </tr>
-  <tr>
-    <td>29</td>
-    <td>Dirty Deeds Done Dirt Cheap</td>
-  </tr>
-</table>
-
-```html
-<table>
-  <tr>
-    <th colspan="3">AC/DC dans les charts Australiens</th>
-  </tr>
-  <tr>
-    <th rowspan="4">1976</th>
-    <td>19</td>
-    <td>T.N.T.</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>It's a Long Way to the Top</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Jailbreak</td>
-  </tr>
-  <tr>
-    <td>29</td>
-    <td>Dirty Deeds Done Dirt Cheap</td>
-  </tr>
-</table>
-```
-
-<table>
   <thead>
     <tr>
-      <th>Équipe</th>
-      <th>Classement</th>
+      <th colspan="3">AC/DC dans les charts Australiens</th>
     </tr>
   </thead>
-  <tfoot>
-    <tr>
-      <th>Team Liquid</th>
-      <th>WR 72%</th>
-    </tr>
-  </tfoot>
   <tbody>
     <tr>
-      <td>Team Liquid</td>
-      <td>1421</td>
+      <th rowspan="4">1976</th>
+      <td>19</td>
+      <td>T.N.T.</td>
     </tr>
     <tr>
-      <td>OG</td>
-      <td>1402</td>
+      <td>9</td>
+      <td>It's a Long Way to the Top</td>
     </tr>
     <tr>
-      <td>Evil Geniuses</td>
-      <td>1311</td>
+      <td>10</td>
+      <td>Jailbreak</td>
     </tr>
     <tr>
-      <td>Team Faceless</td>
-      <td>1278</td>
+      <td>29</td>
+      <td>Dirty Deeds Done Dirt Cheap</td>
     </tr>
   </tbody>
 </table>
 
+`HTML`
+
 ```html
 <table>
-
   <thead>
     <tr>
-      <th>Équipe</th>
-      <th>Classement</th>
+      <th colspan="3">AC/DC dans les charts Australiens</th>
     </tr>
   </thead>
-  
-  <tfoot>
-    <tr>
-      <th>Team Liquid</th>
-      <th>WR 72%</th>
-    </tr>
-  </tfoot>
-  
   <tbody>
     <tr>
-      <td>Team Liquid</td>
-      <td>1421</td>
+      <th rowspan="4">1976</th>
+      <td>19</td>
+      <td>T.N.T.</td>
     </tr>
     <tr>
-      <td>OG</td>
-      <td>1402</td>
+      <td>9</td>
+      <td>It's a Long Way to the Top</td>
     </tr>
     <tr>
-      <td>Evil Geniuses</td>
-      <td>1311</td>
+      <td>10</td>
+      <td>Jailbreak</td>
     </tr>
     <tr>
-      <td>Team Faceless</td>
-      <td>1278</td>
+      <td>29</td>
+      <td>Dirty Deeds Done Dirt Cheap</td>
     </tr>
   </tbody>
-  
 </table>
 ```
+
+`CSS`
+
+```css
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+}
+```
+
