@@ -42,6 +42,48 @@ Le module `CSS Grid Layout` (modèle de disposition en grille) est un module de 
   <img src='img/Grid_1.jpg'  width='100%'>
 </p>
 
+`Ex2`
+
+```html
+
+<div id="grille">
+  <div class="element">1</div>
+  <div class="element">2</div>
+  <div class="element">3</div>
+  <div class="element">4</div>
+  <div class="element">5</div>
+</div>
+
+```
+
+```css
+
+#grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  grid-auto-rows: 100px;
+}
+
+.element {
+  border: 1px solid #ff8e6e;
+  background: #ffbb91;
+  padding: 10px;
+}
+
+.element:nth-of-type(5) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+```
+
+<p align="center">
+  <img src='img/Grid_2.jpg'  width='100%'>
+</p>
+
 ## Poster
 
 <p align="center">
