@@ -205,3 +205,59 @@ p:nth-of-type(4n) {
 }
 
 ```
+
+## Les Pseudo-Elements
+
+Les [pseudo-éléments](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-elements) représentent des entités du document qui ne sont pas décrites en HTML.
+
+`::before`
+
+```css
+
+/* On ajoute un coeur avant les liens */
+
+a::before {
+  content: "♥";
+}
+
+```
+
+`::after`
+
+```css
+
+/* Ajoute une flèche après les liens */
+
+a::after {
+  content: "→";
+}
+
+```
+
+`::first-line`
+
+```css
+
+/* Sélectionne la première ligne d'un élément <p> */
+
+p::first-line {
+  color: red;
+  text-transform: uppercase;
+}
+
+```
+
+`::first-letter`
+
+```css
+
+/* Sélectionne la première ligne d'un élément <p> */
+
+/* Sélectionne la première lettre d'un élément <p> */
+
+p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+
+```
