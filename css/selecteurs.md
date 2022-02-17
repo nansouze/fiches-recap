@@ -251,8 +251,6 @@ p::first-line {
 
 ```css
 
-/* Sélectionne la première ligne d'un élément <p> */
-
 /* Sélectionne la première lettre d'un élément <p> */
 
 p::first-letter {
