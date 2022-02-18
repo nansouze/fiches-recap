@@ -7,6 +7,7 @@ Là où le HTML représente le **fond**, le CSS lui, représente la **forme**
 ### Ressources
 
 - [CSS Functional Notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
+- [Features Queries](https://developer.mozilla.org/fr/docs/Web/CSS/@supports)
 
 ## Où écrire du CSS
 
