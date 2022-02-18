@@ -156,4 +156,67 @@ Il représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.
 - **checkbox** `J'ai lu et j'accepte les conditions générales ...`
 - **radio** `Madame` ou `Monsieur`
 
+## Liste de Sélection [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/select)
 
+### Choix unique
+Une liste de sélection est l'association de l'élément de liste `<select>` et de plusieurs éléments `<option>` qui représentent les choix possibles.
+
+`<select>` prendra l'attribut `name` et les différentes `<option>` la valeur associée grâce à `value`.
+
+Il est possible d'ajouter un attribut `selected` ou `selected="selected"` afin de sélectionner une option particulière par défaut. Sans cet attribut, le premier `<option>`de la liste est sélectionné par défaut.
+
+`HTML`
+
+```html
+<label for="film-like">Quel film avez-vous préférez?:</label>
+
+<select name="films" id="film-like">
+    <option value="">-- Veuillez choisir une option --</option>
+    <option value="starwars4">Star Wars IV</option>
+    <option value="starwars5" selected>Star Wars V</option>
+    <option value="starwars6">Star Wars VI</option>
+</select>
+```
+
+
+### Choix multiples
+
+Avec un attribut `multiple` sur le `<select>` il est possible de définir une liste à choix multiples.
+
+En utilisant la touche `cmd` sur Mac ou `ctrl` sur Linux ou Windows il est possible de sélectionner plusieurs options.
+
+`HTML`
+
+```html
+<label for="film-like">Quel film avez-vous préférez?:</label>
+
+<select name="films" id="film-like" multiple>
+    <option value="">-- Veuillez choisir une option --</option>
+    <option value="starwars4">Star Wars IV</option>
+    <option value="starwars5">Star Wars V</option>
+    <option value="starwars6">Star Wars VI</option>
+</select>
+```
+
+### ⚠️ WARNING
+
+> Avec la balise `<optgroup>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Optgroup), il est possible de créer un groupe d'options parmi lesquelles on peut choisir dans un élément `<select>`.
+
+`HTML`
+
+```html
+<label for="film-like">Quel film avez-vous préférez?:</label>
+
+<select name="films" id="film-like">
+    <optgroup label="StarWars">
+        <option value="starwars4">Star Wars IV</option>
+        <option value="starwars5">Star Wars V</option>
+        <option value="starwars6">Star Wars VI</option>
+    </optgroup>
+    <optgroup label="Rocky">
+        <option value="rocky1">Rocky I</option>
+        <option value="rocky2">Rocky II</option>
+        <option value="rocky3">Rocky III</option>
+    </optgroup>
+</select>
+```
