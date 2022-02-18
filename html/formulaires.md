@@ -89,3 +89,27 @@ Il représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.
 | :-------- | :---------------------------------------------------------------------------------------- | 
 | `rows`    | le nombre de lignes de texte visibles pour le contrôle                                    |
 | `cols`    | la largeur visible du contrôle de saisie, exprimée en largeur moyenne de caractères. La valeur utilisée doit être un entier positif. La valeur par défaut de cet attribut est 20                                                                           |
+
+## Les Eléments Options
+
+### Checkbox [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/checkbox)
+
+### ⚠️ WARNING
+
+> Il est possible d'ajouter un attribut `checked` afin de sélectionner une option particulière par défaut.
+
+`HTML`
+
+```html
+<p>Cochez vos qualités:</p>
+
+<div>
+  <input type="checkbox" id="social" name="social" checked>
+  <label for="social">Social</label>
+</div>
+
+<div>
+  <input type="checkbox" id="aimable" name="aimable">
+  <label for="aimable">Aimable</label>
+</div>
+```
