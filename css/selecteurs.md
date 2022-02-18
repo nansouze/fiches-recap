@@ -206,6 +206,35 @@ p:nth-of-type(4n) {
 
 ```
 
+`:root`
+
+```css
+
+/* Sélectionne l'élément racine du document */
+/* Pour un document HTML, c'est <html> */
+
+:root {
+  background: yellow;
+}
+
+```
+
+```css
+
+/* On déclare nos variables au tout début de notre CSS */
+
+:root {
+  --mainColor: pink;
+  --mainMargin: 15px 70px;
+}
+
+body {
+  background: var(--mainColor);
+  margin: var(--mainMargin);
+}
+
+```
+
 ## Les Pseudo-Elements
 
 Les [pseudo-éléments](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-elements) représentent des entités du document qui ne sont pas décrites en HTML.
