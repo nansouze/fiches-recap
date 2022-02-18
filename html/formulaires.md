@@ -32,13 +32,14 @@ Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 <input type="text" name="prenom" value="jean-françois">
 ```
 
-| Attribut    | Définition                                                                                |
-| :---------- | :---------------------------------------------------------------------------------------- | 
-| `type`      | type de l'input: `text` `email` `password` `number` ... [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#les_diff%C3%A9rents_types_de_champs_input)  |
-| `name`      | le nom du champ qui sera rattaché à la donnée envoyée via le formulaire                   |
-| `value`     | la valeur du champ                                                                        |
-| `size`      | taille spécifique                                                                         |
-| `maxlength` | longueur max                                                                              |
+| Attribut      | Définition                                                                                |
+| :------------ | :---------------------------------------------------------------------------------------- | 
+| `type`        | type de l'input: `text` `email` `password` `number` ... [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#les_diff%C3%A9rents_types_de_champs_input)    |
+| `name`        | le nom du champ qui sera rattaché à la donnée envoyée via le formulaire                   |
+| `value`       | la valeur du champ                                                                        |
+| `size`        | taille spécifique                                                                         |
+| `maxlength`   | longueur max                                                                              |
+| `placeholder` | description du champ qui s'éfface lors de la saisie                                                              |
 
 
 ## `<label>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Label)
@@ -86,5 +87,5 @@ Il représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.
 
 | Attribut  | Définition                                                                                |
 | :-------- | :---------------------------------------------------------------------------------------- | 
-| `rows`    | le nombre de lignes de texte visibles pour le contrôle.                                   |
-| `cols`    | la largeur visible du contrôle de saisie, exprimée en largeur moyenne de caractères. La valeur utilisée doit être un entier positif. La valeur par défaut de cet attribut est 20.                                                                          |
+| `rows`    | le nombre de lignes de texte visibles pour le contrôle                                    |
+| `cols`    | la largeur visible du contrôle de saisie, exprimée en largeur moyenne de caractères. La valeur utilisée doit être un entier positif. La valeur par défaut de cet attribut est 20                                                                           |
