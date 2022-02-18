@@ -11,21 +11,21 @@
 /* MEDIA QUERIES */
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   body {
     background-color: #F09A9D; /* Red */
   }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 577px) and (max-width: 991px) {
   body {
     background-color: #F5CF8E; /* Yellow */
   }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 992px) {
   body {
     background-color: #B2D6FF; /* Blue */
   }
