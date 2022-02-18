@@ -14,10 +14,10 @@ Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 
 2 attributs sont nécessaires :
 
-| Attribut  | Définition                                                                                |
-| :-------- | :---------------------------------------------------------------------------------------- | 
-| `action`  | l'emplacement (une URL) où doivent être envoyées les données collectées par le formulaire |
-| `method`  | la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »)    |
+| Attribut  | Définition                                                                                             |
+| :-------- | :----------------------------------------------------------------------------------------------------- | 
+| `action`  | l'emplacement (une URL) où doivent être envoyées les données collectées par le formulaire              |
+| `method`  | la méthode HTTP utilisée pour envoyer les données (cela peut être [GET](https://developer.mozilla.org/fr/docs/Learn/Forms/Sending_and_retrieving_form_data#la_m%C3%A9thode_get) ou [POST](https://developer.mozilla.org/fr/docs/Learn/Forms/Sending_and_retrieving_form_data#la_m%C3%A9thode_post))           |
 
 
 ## `<input>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input)
@@ -240,7 +240,7 @@ En utilisant la touche `cmd` sur Mac ou `ctrl` sur Linux ou Windows il est possi
 </datalist>
 ```
 
-## Soumettre un Formulaire
+## Soumettre un Formulaire [MDN](https://developer.mozilla.org/fr/docs/Learn/Forms/Sending_and_retrieving_form_data)
 
 Afin d'envoyer les informations saisies, il faut un déclencheur.
 
