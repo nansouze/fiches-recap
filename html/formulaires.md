@@ -20,9 +20,21 @@ Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 | `method`  | la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »)    |
 
 
+## `<input>`
 
+### ⚠️ WARNING
 
+> La balise `<input>` est un élément vide, ce qui signifie qu'il n'a pas besoin de balise fermante.
 
+`HTML`
 
+```html
+<input type="text" name="prenom" value="jean-françois">
+```
 
+| Attribut  | Définition                                                                                |
+| :-------- | :---------------------------------------------------------------------------------------- | 
+| `type`  | type de l'input: `text` `email` `password` `number` |
+| `name`  | la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »)    |
+| `value`  | la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »)    |
 
