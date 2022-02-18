@@ -220,3 +220,21 @@ En utilisant la touche `cmd` sur Mac ou `ctrl` sur Linux ou Windows il est possi
     </optgroup>
 </select>
 ```
+
+> Avec la balise `<datalist>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist), il est possible de contenir un ensemble d'éléments `<option>` qui représentent les valeurs possibles pour d'autres contrôles.
+
+`HTML`
+
+```html
+<label for="ice-cream-choice">Choose a flavor:</label>
+
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+```
