@@ -4,6 +4,8 @@ Le **CSS** ou **C**ascading **S**tyle **S**heets (feuilles de style en cascade) 
 
 Là où le HTML représente le **fond**, le CSS lui, représente la **forme**
 
+### Ressources
+
 - [CSS Functional Notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
 
 ## Où écrire du CSS
