@@ -113,3 +113,47 @@ Il représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.
   <label for="aimable">Aimable</label>
 </div>
 ```
+
+### Radio [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/radio)
+
+### ⚠️ WARNING
+
+> Il est possible d'ajouter un attribut `checked` afin de sélectionner une option particulière par défaut.
+
+> L'attribut `name` est le point commun entre toutes les valeurs associées.
+
+`HTML`
+
+```html
+<p>Situation Personnelle:</p>
+
+<div>
+  <input type="radio" id="celibataire" name="statut" value="celibataire" checked>
+  <label for="celibataire">Célibataire</label>
+</div>
+
+<div>
+  <input type="radio" id="marie" name="statut" value="marie">
+  <label for="marie">Marié</label>
+</div>
+
+<div>
+  <input type="radio" id="divorce" name="statut" value="divorce">
+  <label for="divorce">Divorcé</label>
+</div>
+
+<div>
+  <input type="radio" id="veuf" name="statut" value="veuf">
+  <label for="veuf">Veuf</label>
+</div>
+
+```
+
+### ⚠️ WARNING
+
+> **Choisir entre radio & checkbox** : Une checkbox se suffit à elle même pour avoir un intérêt, elle peut être cochée ou non. Les radios n'ont un intérêt que lorsqu'il y a au moins 2 possibilités.
+
+- **checkbox** `J'ai lu et j'accepte les conditions générales ...`
+- **radio** `Madame` ou `Monsieur`
+
+
