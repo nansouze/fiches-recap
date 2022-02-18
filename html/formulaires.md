@@ -1,6 +1,6 @@
 # Les Formulaires [MDN](https://developer.mozilla.org/fr/docs/Learn/Forms)
 
-## `<form>`
+## `<form>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form)
 
 Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 
@@ -20,7 +20,7 @@ Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 | `method`  | la méthode HTTP utilisée pour envoyer les données (cela peut être « get » ou « post »)    |
 
 
-## `<input>`
+## `<input>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input)
 
 ### ⚠️ WARNING
 
@@ -32,14 +32,16 @@ Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 <input type="text" name="prenom" value="jean-françois">
 ```
 
-| Attribut  | Définition                                                                                |
-| :-------- | :---------------------------------------------------------------------------------------- | 
-| `type`  | type de l'input: `text` `email` `password` `number` ... [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#les_diff%C3%A9rents_types_de_champs_input)|
-| `name`  | le nom du champ qui sera rattaché à la donnée envoyée via le formulaire                     |
-| `value` | la valeur du champ                                                                          |
+| Attribut    | Définition                                                                                |
+| :---------- | :---------------------------------------------------------------------------------------- | 
+| `type`      | type de l'input: `text` `email` `password` `number` ... [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#les_diff%C3%A9rents_types_de_champs_input)  |
+| `name`      | le nom du champ qui sera rattaché à la donnée envoyée via le formulaire                   |
+| `value`     | la valeur du champ                                                                        |
+| `size`      | taille spécifique                                                                         |
+| `maxlength` | longueur max                                                                              |
 
 
-## `<label>`
+## `<label>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Label)
 
 Les labels permettent d'ajouter un titre contextuel à un champ.
 
@@ -64,3 +66,25 @@ Les labels permettent d'ajouter un titre contextuel à un champ.
     <input type="text" id="name" name="user_name">
 </div>
 ```
+
+## `<textarea>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Textarea)
+
+Il représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.
+
+### ⚠️ WARNING
+
+> Il est possible de mettre un texte par défaut.
+
+`HTML`
+
+```html
+<div>
+    <label for="msg">Message :</label>
+    <textarea id="msg" name="user_message" rows="5" cols="33">Ceci est un texte par défaut</textarea>
+</div>
+```
+
+| Attribut  | Définition                                                                                |
+| :-------- | :---------------------------------------------------------------------------------------- | 
+| `rows`    | le nombre de lignes de texte visibles pour le contrôle.                                   |
+| `cols`    | la largeur visible du contrôle de saisie, exprimée en largeur moyenne de caractères. La valeur utilisée doit être un entier positif. La valeur par défaut de cet attribut est 20.                                                                          |
