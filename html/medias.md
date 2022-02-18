@@ -17,7 +17,7 @@ L'élément `<source>` et son attribut `src` permet de spécifier une source, `t
 ```html
 <video controls="controls">
   <source src="podcast-eiffel.mp4" type="video/mp4">
-  La vidéo n'est pas prise en charge <!--Message en cas de fonctionnalité non supportée-->
+  La vidéo n'est pas prise en charge <!-- Message en cas de fonctionnalité non supportée -->
 </video>
 ```
 
@@ -41,7 +41,7 @@ L'élément `<source>` et son attribut `src` permet de spécifier une source, `t
 ```html
 <audio controls="controls">
   <source src="podcast-eiffel.mp3" type="audio/mp3">
-  L'audio n'est pas pris en charge <!--Message en cas de fonctionnalité non supportée-->
+  L'audio n'est pas pris en charge <!-- Message en cas de fonctionnalité non supportée -->
 </audio>
 ```
 
