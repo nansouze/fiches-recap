@@ -32,15 +32,16 @@ Tous les formulaires HTML débutent par un élément `<form>` comme celui-ci :
 <input type="text" name="prenom" value="jean-françois">
 ```
 
-| Attribut      | Définition                                                                                |
-| :------------ | :---------------------------------------------------------------------------------------- | 
-| `type`        | type de l'input: `text` `email` `password` `number` ... [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#les_diff%C3%A9rents_types_de_champs_input)    |
-| `name`        | le nom du champ qui sera rattaché à la donnée envoyée via le formulaire                   |
-| `value`       | la valeur du champ                                                                        |
-| `size`        | taille spécifique                                                                         |
-| `maxlength`   | longueur max                                                                              |
-| `placeholder` | description du champ qui s'éfface lors de la saisie                                                              |
-
+| Attribut      | Définition                                                                                              |
+| :------------ | :------------------------------------------------------------------------------------------------------ | 
+| `type`        | type de l'input: `text` `email` `password` `number` ... [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input#les_diff%C3%A9rents_types_de_champs_input)                  |
+| `name`        | le nom du champ qui sera rattaché à la donnée envoyée via le formulaire                                 |
+| `value`       | la valeur du champ                                                                                      |
+| `size`        | taille spécifique                                                                                       |
+| `maxlength`   | longueur max                                                                                            |
+| `placeholder` | description du champ qui s'éfface lors de la saisie                                                     |
+| `autofocus`   | un attribut booléen qui passe le focus sur le champ lorsque le formulaire est affiché                   |
+| `required`    | un attribut booléen qui indique que le champ doit être renseigné avant de pouvoir envoyer le formulaire |
 
 ## `<label>` [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Label)
 
@@ -237,4 +238,20 @@ En utilisant la touche `cmd` sur Mac ou `ctrl` sur Linux ou Windows il est possi
     <option value="Strawberry">
     <option value="Vanilla">
 </datalist>
+```
+
+## Soumettre un Formulaire
+
+Afin d'envoyer les informations saisies, il faut un déclencheur.
+
+Il peut être de 2 types:
+
+`HTML`
+
+```html
+<input type="submit" value="Envoyer">
+```
+
+```html
+<button>Envoyer</button>
 ```
