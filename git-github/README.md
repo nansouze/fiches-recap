@@ -10,5 +10,5 @@
 ## GitHub
 
 <p align="center">
-  <img src='img/Git_Hub.png'  width='20%'>
+  <img src='img/Git_Hub.png'  width='30%'>
 </p>
