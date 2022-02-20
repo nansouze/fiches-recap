@@ -17,7 +17,7 @@ Pour un dossier de travail donné, Git manipule différents **espaces virtuels**
 | `Workspace`         | espace stockant les modifications en cours, qui ne sont pas (encore) prises en compte par Git. |
 | `Index (ou Stage)`  | espace stockant les modifications en cours, qui seront prises en compte par Git pour le prochain commit (mais pas encore commitées). |
 | `Local Repository`  | espace stockant les modifications déjà prises en compte par Git. |
-| `Remote Repository` | désigne le dépôt distant (remote, sur GitHub par exemple), dépôt auquel est relié votre dépôt local. Les commits du local repository doivent y être pushés pour mettre le dépôt distant à jour et collaborer avec d'autres personnes. |
+| `Remote Repository` | désigne le dépôt distant (remote, sur GitHub par exemple), dépôt auquel est relié votre dépôt local. **Les commits du local repository doivent y être pushés pour mettre le dépôt distant à jour** et collaborer avec d'autres personnes. |
 
 <p align="center">
   <img src='img/Git_Overview.png'  width='70%'>
