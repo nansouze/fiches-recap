@@ -1,6 +1,4 @@
-# Git & GitHub
-
-## Git (Versionning & Collaboration)
+# Git (Versionning & Collaboration)
 
 <p align="center">
   <img src='img/Git.png'  width='20%'>
@@ -8,7 +6,7 @@
 
 [Git](https://git-scm.com/) est un outil collaboratif de [gestion de version](https://fr.wikipedia.org/wiki/Gestion_de_versions), créé par Linus Torvalds. C'est un outil simple et performant, dont la principale tâche est de gérer l'évolution du contenu d'une arborescence (donc d'un site internet).
 
-### Concepts Fondamentaux de Git
+## Concepts Fondamentaux de Git
 
 Pour un dossier de travail donné, Git manipule différents **espaces virtuels**:
 
@@ -19,11 +17,51 @@ Pour un dossier de travail donné, Git manipule différents **espaces virtuels**
 | `Local Repository`  | espace stockant les modifications déjà prises en compte par Git. |
 | `Remote Repository` | désigne le dépôt distant (remote, sur [GitHub](https://github.com/) par exemple), dépôt auquel est relié votre dépôt local. **Les commits du local repository doivent y être pushés pour mettre le dépôt distant à jour** et collaborer avec d'autres personnes. |
 
+<br>
+
 <p align="center">
   <img src='img/Git_Overview.png'  width='70%'>
 </p>
 
-## GitHub (Code Hosting Platform)
+## Créer une Clé SSH pour GitHub
+
+Avant toute chose, pour utiliser [Git](https://git-scm.com/) et [GitHub](https://github.com/) à leur pleins potentiels, on va créer une clé dite SSH. Cette clé est une carte d'identité nous permettant de nous authentifier auprès de [GitHub](https://github.com/), notamment pour accéder aux repos privés, signer nos commits, etc.
+
+### Création de la Clé
+
+```sh
+
+# Attention à bien remplacer l'email par le votre ;)
+ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
+
+```
+
+⚠️ **WARNING**
+
+> Il vous sera demandé d'inventer **une passphrase**, c'est-à-dire un mot de passe un peu costaud (qui peut carrément être une phrase, avec des espaces, des accents et tout ! Cette passphrase n'est pas strictement obligatoire (elle peut être vide…), mais il est fortement recommandé d'en choisir une. Par contre, il faut la retenir par cœur, si elle est perdue, **la clé SSH est bonne à jeter !**
+
+Une clé SSH se compose de **deux parties**, si bien qu'à l'issue de la commande, vous obtenez deux choses:
+
+- une **clé privée** dans `/home/mint/.ssh/id_rsa` — pour protégér du contenu, à garder pour soi !
+- une **clé publique** dans `/home/mint/.ssh/id_rsa.pub` — elle est capable de lire du contenu protégé par la clé privé
+
+<p align="center">
+  <img src='img/Cles_Prive_Publique.png'  width='70%'>
+</p>
+
+## Mémo Commandes GIT
+
+- [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
+- [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
+
+## Fichiers Spéciaux
+
+| Nom       | Description                                                           |
+| :-------- | :-------------------------------------------------------------------- |
+| `.gitignore` | permet de lister des fichiers qui doivent être ignorés lors du add |
+| `.gitkeep`   | est un fichier qui peut être placé à la racine d'un répertoire vide afin que git prenne ce dossier en compte même s'il ne contient pas de fichier |
+
+# GitHub (Code Hosting Platform)
 
 <p align="center">
   <img src='img/Git_Hub.png'  width='30%'>
