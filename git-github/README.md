@@ -20,7 +20,7 @@ Pour un dossier de travail donné, Git manipule différents **espaces virtuels**
 | `Remote Repository` | désigne le dépôt distant (remote, sur GitHub par exemple), dépôt auquel est relié votre dépôt local. Les commits du local repository doivent y être pushés pour mettre le dépôt distant à jour et collaborer avec d'autres personnes. |
 
 <p align="center">
-  <img src='img/Git_Overview.png'  width='20%'>
+  <img src='img/Git_Overview.png'  width='70%'>
 </p>
 
 ## GitHub (Code Hosting Platform)
