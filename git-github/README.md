@@ -114,10 +114,59 @@ ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
 
 > Si vous oubliez cette étape, vous aurez des erreurs du type "Permission denied (publickey)" lors de l'utilisation de Git & GitHub.
 
-## Mémo Commandes GIT
+## Configuration Locale de Git
+
+Git peut être configuré [très précisement](https://git-scm.com/docs/git-config). Voici quelques réglages utiles à mettre en place:
+
+**Nom affiché dans les commits:**
+
+```sh
+
+# N'oubliez pas de changer le nom par le votre… ;)
+git config --global user.name "John Wick"
+
+```
+
+**Email associé au commit (conseil : le même que celui du compte GitHub):**
+
+```sh
+
+# N'oubliez pas de changer l'email par le votre… ;)
+git config --global user.email "john.wick@lecroquemitaine.fr"
+
+```
+
+**Choix de l'éditeur de texte utilisé pour écrire les messages de commit:**
+
+```sh
+
+git config --global core.editor nano # ou code pour Visual Studio Code, etc.
+
+```
+
+**Activation des couleurs dans le résultat des commandes Git:**
+
+```sh
+
+git config --global color.ui true
+
+```
+
+⚠️ **WARNING**
+
+> Pour vérifier la configutation complète: `git config -l`. Cette commande va afficher tous les réglages actifs de `git`.
+
+## Mémo Commandes Git
 
 - [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
+
+### gggggggggggggg
+
+| Nom       | Description                                                           |
+| :-------- | :-------------------------------------------------------------------- |
+| `.gitignore` | permet de lister des fichiers qui doivent être ignorés lors du add |
+| `.gitkeep`   | est un fichier qui peut être placé à la racine d'un répertoire ier |
 
 ## Fichiers Spéciaux
 
