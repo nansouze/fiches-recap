@@ -161,12 +161,26 @@ git config --global color.ui true
 - [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
 
-### gggggggggggggg
+### Obtenir de l'aide
 
-| Nom       | Description                                                           |
-| :-------- | :-------------------------------------------------------------------- |
-| `.gitignore` | permet de lister des fichiers qui doivent être ignorés lors du add |
-| `.gitkeep`   | est un fichier qui peut être placé à la racine d'un répertoire ier |
+| Nom                 | Description                                |
+| :-------------------| :----------------------------------------- |
+| `git --help`        | renvoie la liste des commandes disponibles |
+| `git [commande] -h` | idem pour une commande précise             |
+
+### Cloner ou Initier un Repo
+
+| Nom                           | Description                                |
+| :---------------------------- | :----------------------------------------- |
+| `git clone {url} [nom-local]` | récupère un repo distant (remote sur GitHub par exemple) en local, dans un dossier créé à la volée qu'il est possible de renommer (par défaut : nom du repo sur le remote) |
+| `git init`                    | crée un nouveau projet Git local à partir d'un dossier courant. Si on veut ensuite le partager sur GitHub, il faudra alors paramétrer au moins un remote            |
+
+
+### Pour les Premiers Commits
+
+<p align="center">
+  <img src='img/Premiers_Commits.png'  width='30%'>
+</p>
 
 ## Fichiers Spéciaux
 
