@@ -182,6 +182,16 @@ git config --global color.ui true
   <img src='img/Premiers_Commits.png'  width='100%'>
 </p>
 
+### Vérifier l'état Courant du Repo Local
+
+| Nom          | Description                                                                       |
+| :----------- | :-------------------------------------------------------------------------------- |
+| `git status` | récapitule l'état local (workspace et index) des fichiers du projet géré avec Git |
+
+
+- **En rouge:** modifié mais non pris en compte (= en workspace)
+- **En vert:** modifié et pris en compte (= ajouté à l'index)
+
 ### En Cas de Suppression de Votre Dossier .git (Cloné depuis GitHub)
 
 ```sh
