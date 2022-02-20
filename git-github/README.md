@@ -99,6 +99,21 @@ Settings > SSH and GPG keys > New SSH key > Coller le contenu de la clé et vali
 
 > Pour que Git utilise automatiquement **la clé SSH** pour authentifier les commandes git ..., il faut utiliser des URLs avec le protocole `SSH` plutôt que `HTTPS`. [Why is GIT always asking for my password?](https://help.github.com/articles/why-is-git-always-asking-for-my-password/)
 
+### Activation de la Clé SSH en Local
+
+Pour que la clé SSH soit utilisable, et aussi pour éviter d'avoir à donner sa passphrase à chaque utilisation, il faut ajouter la clé privée à un « trousseau de clé » (programme `ssh-agent`):
+
+```sh
+
+eval "$(ssh-agent -s)" # pour lancer ssh-agent de façon sécurisée
+ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
+
+```
+
+⚠️ **WARNING**
+
+> Si vous oubliez cette étape, vous aurez des erreurs du type "Permission denied (publickey)" lors de l'utilisation de Git & GitHub.
+
 ## Mémo Commandes GIT
 
 - [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
