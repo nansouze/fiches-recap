@@ -35,7 +35,7 @@ Avant de générer une clé SSH, on peut vérifier si nous n'avons pas déjà de
 
 ```sh
 
-# Affiche les fichiers du répertoire .ssh, si ils existent
+# Affiche les fichiers du répertoire .ssh, s'ils existent
 $ ls -al ~/.ssh
 
 ```
