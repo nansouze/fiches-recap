@@ -13,6 +13,6 @@ Des fiches récapitulatives, classées par thèmes.
 - Python
 
 ## TOOLS
-- [VS Code](vscode/)
+- [VS Code](vs-code/)
 - [Terminal](terminal/)
 - [Git & GitHub](git-github/)
