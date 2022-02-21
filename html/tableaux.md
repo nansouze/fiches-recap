@@ -1,7 +1,7 @@
 # Les Tableaux
 
 <p align="center">
-  <img src='img/Tableur.png'  width='50%'>
+  <img src='assets/img/Tableur.png'  width='50%'>
 </p>
 
 ## 3 Parties
