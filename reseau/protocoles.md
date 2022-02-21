@@ -10,7 +10,7 @@
 ## Les protocoles de haut niveau
 
 <p align="center">
-  <img src='img/Protocoles_Haut_Niveau.jpg'  width='100%'>
+  <img src='assets/img/Protocoles_Haut_Niveau.jpg'  width='100%'>
 </p>
 
 
