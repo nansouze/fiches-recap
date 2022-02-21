@@ -1,4 +1,4 @@
-# Font [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-family)
+# Fonts [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-family)
 
 ```css
 
