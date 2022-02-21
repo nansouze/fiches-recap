@@ -2,11 +2,13 @@
 
 Des fiches récapitulatives, classées par thèmes.
 
-- Html
+
+## TECHNOS
+- [Html](html/)
 - Css
 - Js
 
-
+## TOOLS
 - VS Code
 - Terminal
 - Git & GitHub
