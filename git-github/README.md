@@ -178,7 +178,7 @@ git config --global color.ui true
 
 | Nom                           | Description                                |
 | :---------------------------- | :----------------------------------------- |
-| `git clone {url} [nom-local]` | récupère un repo distant (remote sur GitHub par exemple) en local, dans un dossier créé à la volée qu'il est possible de renommer (par défaut : nom du repo sur le remote) |
+| `git clone [url] [nom-local]` | récupère un repo distant (remote sur GitHub par exemple) en local, dans un dossier créé à la volée qu'il est possible de renommer (par défaut : nom du repo sur le remote) |
 | `git init`                    | crée un nouveau projet Git local à partir d'un dossier courant. Si on veut ensuite le partager sur GitHub, il faudra alors paramétrer au moins un remote            |
 
 
