@@ -179,12 +179,19 @@ git config --global color.ui true
 
 ### Créer des dépots
 
-| Nom                                         | Description                                  |
-| :------------------------------------------ | :------------------------------------------- |
-| `git init [nom-du-projet]`                  | Crée un dépôt local à partir du nom spécifié |
-| `git clone [url] [nom-du-projet]` | Télécharge un projet et tout son historique de versions (par défaut : nom du repo sur le remote) |
+```sh
 
+# Crée un dépôt local à partir du nom spécifié
+git init [nom-du-projet]
 
+```
+
+```sh
+
+# Télécharge un projet et tout son historique de versions (par défaut : nom du repo sur le remote)
+git clone [url] [nom-du-projet]
+
+```
 
 ### Pour les premiers commits
 
@@ -194,9 +201,12 @@ git config --global color.ui true
 
 ### Vérifier l'état courant du repo local
 
-| Nom          | Description                                                                       |
-| :----------- | :-------------------------------------------------------------------------------- |
-| `git status` | Récapitule l'état local (workspace et index) des fichiers du projet géré avec Git |
+```sh
+
+# Récapitule l'état local (workspace et index) des fichiers du projet géré avec git
+git status
+
+```
 
 
 - **En rouge:** modifié mais non pris en compte (= en workspace)
