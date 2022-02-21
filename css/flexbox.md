@@ -103,5 +103,5 @@ proportion par rapport aux autres */
 ## Poster
 
 <p align="center">
-  <img src='img/Css_Flexbox_Poster.png'  width='100%'>
+  <img src='assets/img/Css_Flexbox_Poster.png'  width='100%'>
 </p>
