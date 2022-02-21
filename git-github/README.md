@@ -10,12 +10,12 @@
 
 Pour un dossier de travail donné, Git manipule différents **espaces virtuels**:
 
-| Espaces             | Description                           |
-| :------------------ | :------------------------------------ | 
-| `Workspace`         | espace stockant les modifications en cours, qui ne sont pas (encore) prises en compte par Git. |
-| `Index (ou Stage)`  | espace stockant les modifications en cours, qui seront prises en compte par Git pour le prochain commit (mais pas encore commitées). |
-| `Local Repository`  | espace stockant les modifications déjà prises en compte par Git. |
-| `Remote Repository` | désigne le dépôt distant (remote, sur [GitHub](https://github.com/) par exemple), dépôt auquel est relié votre dépôt local. **Les commits du local repository doivent y être pushés pour mettre le dépôt distant à jour** et collaborer avec d'autres personnes. |
+| Espaces                               | Description                                                                                    |
+| :------------------------------------ | :--------------------------------------------------------------------------------------------- | 
+| `Workspace`                           | Espace stockant les modifications en cours (pas encore prises en compte par git) |
+| `Index (ou Stage)`                    | Espace stockant les modifications en cours (qui seront prises en compte par git pour le prochain commit) |
+| `Local Repository`                    | Espace stockant les modifications (déjà prises en compte par git) |
+| `Remote Repository`                   | Désigne le dépôt distant (remote, sur [GitHub](https://github.com/) par exemple) |
 
 <br>
 
@@ -114,9 +114,27 @@ ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
 
 > Si vous oubliez cette étape, vous aurez des erreurs du type "Permission denied (publickey)" lors de l'utilisation de Git & GitHub.
 
-## Configuration locale de git
+## Commandes git
 
-Git peut être configuré [très précisement](https://git-scm.com/docs/git-config). Voici quelques réglages utiles à mettre en place:
+- [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
+- [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
+
+### Obtenir la version de git
+
+| Nom                 | Description                                |
+| :-------------------| :----------------------------------------- |
+| `git --version`     | Renvoie la version installée de git        |
+
+### Obtenir de l'aide
+
+| Nom                 | Description                                |
+| :-------------------| :----------------------------------------- |
+| `git --help`        | Renvoie la liste des commandes disponibles |
+| `git [commande] -h` | Idem pour une commande précise             |
+
+### Configuration des outils
+
+Cela va permettre de configurer les informations de l'utilisateur pour tous les dépôts locaux.
 
 **Nom affiché dans les commits:**
 
@@ -156,30 +174,13 @@ git config --global color.ui true
 
 > Pour vérifier la configutation complète: `git config -l`. Cette commande va afficher tous les réglages actifs de `git`.
 
-## Commandes git
+### Créer des dépots
 
-- [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
-- [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
+| Nom                                         | Description                                  |
+| :------------------------------------------ | :------------------------------------------- |
+| `git init [nom-du-projet]`                  | Crée un dépôt local à partir du nom spécifié |
+| `git clone [url] [nom-du-projet]` | Télécharge un projet et tout son historique de versions (par défaut : nom du repo sur le remote) |
 
-### Obtenir la version de git
-
-| Nom                 | Description                                |
-| :-------------------| :----------------------------------------- |
-| `git --version`     | renvoie la version installée de git        |
-
-### Obtenir de l'aide
-
-| Nom                 | Description                                |
-| :-------------------| :----------------------------------------- |
-| `git --help`        | renvoie la liste des commandes disponibles |
-| `git [commande] -h` | idem pour une commande précise             |
-
-### Cloner ou initier un repo
-
-| Nom                           | Description                                |
-| :---------------------------- | :----------------------------------------- |
-| `git clone [url] [nom-local]` | récupère un repo distant (remote sur GitHub par exemple) en local, dans un dossier créé à la volée qu'il est possible de renommer (par défaut : nom du repo sur le remote) |
-| `git init`                    | crée un nouveau projet Git local à partir d'un dossier courant. Si on veut ensuite le partager sur GitHub, il faudra alors paramétrer au moins un remote            |
 
 
 ### Pour les premiers commits
@@ -192,7 +193,7 @@ git config --global color.ui true
 
 | Nom          | Description                                                                       |
 | :----------- | :-------------------------------------------------------------------------------- |
-| `git status` | récapitule l'état local (workspace et index) des fichiers du projet géré avec Git |
+| `git status` | Récapitule l'état local (workspace et index) des fichiers du projet géré avec Git |
 
 
 - **En rouge:** modifié mais non pris en compte (= en workspace)
@@ -249,8 +250,8 @@ Voici donc 2 ressources qui expliquent bien ces commandes, et dans quel cas les 
 
 | Nom       | Description                                                           |
 | :-------- | :-------------------------------------------------------------------- |
-| `.gitignore` | permet de lister des fichiers qui doivent être ignorés lors du add |
-| `.gitkeep`   | est un fichier qui peut être placé à la racine d'un répertoire vide afin que git prenne ce dossier en compte même s'il ne contient pas de fichier |
+| `.gitignore` | Permet de lister des fichiers qui doivent être ignorés lors du add |
+| `.gitkeep`   | Fichier qui peut être placé à la racine d'un répertoire vide afin que git prenne ce dossier en compte même s'il ne contient pas de fichier |
 
 # GitHub (Code Hosting Platform)
 
