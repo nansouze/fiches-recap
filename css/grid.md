@@ -39,7 +39,7 @@ Le module `CSS Grid Layout` (modèle de disposition en grille) est un module de 
 ```
 
 <p align="center">
-  <img src='img/Grid_1.jpg'  width='100%'>
+  <img src='assets/img/Grid_1.jpg'  width='100%'>
 </p>
 
 `Ex2`
@@ -81,11 +81,11 @@ Le module `CSS Grid Layout` (modèle de disposition en grille) est un module de 
 ```
 
 <p align="center">
-  <img src='img/Grid_2.jpg'  width='100%'>
+  <img src='assets/img/Grid_2.jpg'  width='100%'>
 </p>
 
 ## Poster
 
 <p align="center">
-  <img src='img/Css_Grid_Poster.png'  width='100%'>
+  <img src='assets/img/Css_Grid_Poster.png'  width='100%'>
 </p>
