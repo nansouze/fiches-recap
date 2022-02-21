@@ -121,51 +121,54 @@ ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
 
 ### Obtenir la version de git
 
-| Nom                 | Description                                |
-| :-------------------| :----------------------------------------- |
-| `git --version`     | Renvoie la version installée de git        |
+```sh
+
+# Renvoie la version installée de git
+git --version
+git version 2.35.1
+
+```
 
 ### Obtenir de l'aide
 
-| Nom                 | Description                                |
-| :-------------------| :----------------------------------------- |
-| `git --help`        | Renvoie la liste des commandes disponibles |
-| `git [commande] -h` | Idem pour une commande précise             |
+```sh
+
+# Renvoie la liste des commandes disponibles
+git --help
+
+# Idem pour une commande précise 
+git [commande] -h
+
+```
 
 ### Configuration des outils
 
 Cela va permettre de configurer les informations de l'utilisateur pour tous les dépôts locaux.
 
-**Nom affiché dans les commits:**
-
 ```sh
 
-# N'oubliez pas de changer le nom par le votre… ;)
+# Nom affiché dans les commits
 git config --global user.name "John Wick"
 
 ```
 
-**Email associé au commit (conseil : le même que celui du compte GitHub):**
-
 ```sh
 
-# N'oubliez pas de changer l'email par le votre… ;)
+# Email associé au commit (conseil: le même que celui du compte GitHub):
 git config --global user.email "john.wick@lecroquemitaine.fr"
 
 ```
 
-**Choix de l'éditeur de texte utilisé pour écrire les messages de commit:**
-
 ```sh
 
+# Choix de l'éditeur de texte utilisé pour écrire les messages de commit:
 git config --global core.editor nano # ou code pour Visual Studio Code, etc.
 
 ```
 
-**Activation des couleurs dans le résultat des commandes Git:**
-
 ```sh
 
+# Activation des couleurs dans le résultat des commandes git
 git config --global color.ui true
 
 ```
