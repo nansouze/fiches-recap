@@ -1,7 +1,7 @@
 # Les Nouvelles Balise de Stucture
 
 <p align="center">
-  <img src='img/Schema.png'  width='50%'>
+  <img src='assets/img/Schema.png'  width='50%'>
 </p>
 
 | Balise      | Fonction                                         |
