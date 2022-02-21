@@ -16,5 +16,5 @@ Des éléments qui se mettent les uns à côté des autres et qui sont redimensi
 > A chaque `inline-block` que l'on utilise, il y a un petit espace blanc (environ 4px) qui se créee. le seul moyen c'est de mettre les balises côte à cote (aucun trou).
 
 <p align="center">
-  <img src='img/Inline_Block.jpg'  width='70%'>
+  <img src='assets/img/Inline_Block.jpg'  width='70%'>
 </p>
