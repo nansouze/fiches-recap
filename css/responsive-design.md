@@ -3,7 +3,7 @@
 ## Media Queries
 
 <p align="center">
-  <img src='img/Responsive_1.png'  width='100%'>
+  <img src='assets/img/Responsive_1.png'  width='100%'>
 </p>
 
 ```css
@@ -36,7 +36,7 @@
 ```
 
 <p align="center">
-  <img src='img/Responsive_2.png'  width='100%'>
+  <img src='assets/img/Responsive_2.png'  width='100%'>
 </p>
 
 ## Unités
