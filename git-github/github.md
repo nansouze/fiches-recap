@@ -1,7 +1,7 @@
 # GitHub (Code Hosting Platform)
 
 <p align="center">
-  <img src='img/Git_Hub.png'  width='30%'>
+  <img src='assets/img/Git_Hub.png'  width='30%'>
 </p>
 
 Pour faciliter la communication autour du projet, les bons vieux emails fonctionnent, mais il existe aujourd'hui des sites et de services complémentaires à Git. Le site [GitHub](https://github.com/) est l'un d'entre eux.
@@ -11,7 +11,7 @@ C'est une plateforme de services & un réseau social — Il agit comme un serveu
 [GitHub](https://github.com/) est probablement le réseau social de développeurs le plus populaire aujourd'hui.
 
 <p align="center">
-  <img src='img/Github_Social.png'  width='50%'>
+  <img src='assets/img/Github_Social.png'  width='50%'>
 </p>
 
 Mais, il n'est pas le seul. Il existe également d'autres services comme:
