@@ -6,7 +6,7 @@
 
 [Git](https://git-scm.com/) est un outil collaboratif de [gestion de version](https://fr.wikipedia.org/wiki/Gestion_de_versions), créé par Linus Torvalds. C'est un outil simple et performant, dont la principale tâche est de gérer l'évolution du contenu d'une arborescence (donc d'un site internet).
 
-## Concepts Fondamentaux de Git
+## Concepts fondamentaux de git
 
 Pour un dossier de travail donné, Git manipule différents **espaces virtuels**:
 
@@ -23,13 +23,13 @@ Pour un dossier de travail donné, Git manipule différents **espaces virtuels**
   <img src='img/Git_Overview.png'  width='70%'>
 </p>
 
-## Créer une Clé SSH pour GitHub
+## Créer une clé SSH pour GitHub
 
 Avant toute chose, pour utiliser [Git](https://git-scm.com/) et [GitHub](https://github.com/) à leur pleins potentiels, on va créer une clé dite SSH. Cette clé est une carte d'identité nous permettant de nous authentifier auprès de [GitHub](https://github.com/), notamment pour accéder aux repos privés, signer nos commits, etc.
 
 - [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) 
 
-### Vérification de Clés Existantes
+### Vérification de clés existantes
 
 Avant de générer une clé SSH, on peut vérifier si nous n'avons pas déjà de clés existantes.
 
@@ -45,7 +45,7 @@ Par défaut, les noms de fichier des clès publiques supportées pour GitHub son
 - `id_ecdsa.pub`
 - `id_ed25519.pub`
 
-### Création de la Clé
+### Création de la clé
 
 ```sh
 
@@ -76,7 +76,7 @@ Une clé SSH se compose de **deux parties**, si bien qu'à l'issue de la command
   <img src='img/Cles_Prive_Publique.png'  width='30%'>
 </p>
 
-### Ajout de la Clé Publique sur GitHub
+### Ajout de la clé publique sur GitHub
 
 Vous allez donc copier le contenu de la clé publique sur [GitHub](https://github.com/). Vous pouvez regarder le contenu de la clé publique, par curiosité:
 
@@ -99,7 +99,7 @@ Settings > SSH and GPG keys > New SSH key > Coller le contenu de la clé et vali
 
 > Pour que Git utilise automatiquement **la clé SSH** pour authentifier les commandes git ..., il faut utiliser des URLs avec le protocole `SSH` plutôt que `HTTPS`. [Why is GIT always asking for my password?](https://help.github.com/articles/why-is-git-always-asking-for-my-password/)
 
-### Activation de la Clé SSH en Local
+### Activation de la clé SSH en local
 
 Pour que la clé SSH soit utilisable, et aussi pour éviter d'avoir à donner sa passphrase à chaque utilisation, il faut ajouter la clé privée à un « trousseau de clé » (programme `ssh-agent`):
 
@@ -114,7 +114,7 @@ ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
 
 > Si vous oubliez cette étape, vous aurez des erreurs du type "Permission denied (publickey)" lors de l'utilisation de Git & GitHub.
 
-## Configuration Locale de Git
+## Configuration locale de git
 
 Git peut être configuré [très précisement](https://git-scm.com/docs/git-config). Voici quelques réglages utiles à mettre en place:
 
@@ -156,10 +156,16 @@ git config --global color.ui true
 
 > Pour vérifier la configutation complète: `git config -l`. Cette commande va afficher tous les réglages actifs de `git`.
 
-## Mémo Commandes Git
+## Commandes git
 
 - [Cheat Sheet Git](assets/Github_Git_Cheat_Sheet.pdf)
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
+
+### Obtenir la version de git
+
+| Nom                 | Description                                |
+| :-------------------| :----------------------------------------- |
+| `git --version`     | renvoie la version installée de git        |
 
 ### Obtenir de l'aide
 
@@ -168,7 +174,7 @@ git config --global color.ui true
 | `git --help`        | renvoie la liste des commandes disponibles |
 | `git [commande] -h` | idem pour une commande précise             |
 
-### Cloner ou Initier un Repo
+### Cloner ou initier un repo
 
 | Nom                           | Description                                |
 | :---------------------------- | :----------------------------------------- |
@@ -176,13 +182,13 @@ git config --global color.ui true
 | `git init`                    | crée un nouveau projet Git local à partir d'un dossier courant. Si on veut ensuite le partager sur GitHub, il faudra alors paramétrer au moins un remote            |
 
 
-### Pour les Premiers Commits
+### Pour les premiers commits
 
 <p align="center">
   <img src='img/Premiers_Commits.png'  width='100%'>
 </p>
 
-### Vérifier l'état Courant du Repo Local
+### Vérifier l'état courant du repo local
 
 | Nom          | Description                                                                       |
 | :----------- | :-------------------------------------------------------------------------------- |
@@ -192,7 +198,7 @@ git config --global color.ui true
 - **En rouge:** modifié mais non pris en compte (= en workspace)
 - **En vert:** modifié et pris en compte (= ajouté à l'index)
 
-### En Cas de Suppression de Votre Dossier .git (Cloné depuis GitHub)
+### En Cas de suppression de votre fichier .git (Cloné depuis GitHub)
 
 ```sh
 
@@ -204,7 +210,7 @@ git push origin --force master
 
 ```
 
-### En Cas de Dépôt Local Corrompu
+### En cas de dépôt local corrompu
 
 Si vous avez des messages du type:
 
@@ -230,7 +236,7 @@ git fsck --full
 
 ```
 
-### En cas de Bétises
+### En cas de bétises
 
 Il suffit juste de connaître les bonnes commandes 😉.
 
@@ -239,7 +245,7 @@ Voici donc 2 ressources qui expliquent bien ces commandes, et dans quel cas les 
 - [Ohshitgit](https://ohshitgit.com/fr)
 - [Dangitgit](https://dangitgit.com/fr)
 
-## Fichiers Spéciaux
+## Fichiers spéciaux
 
 | Nom       | Description                                                           |
 | :-------- | :-------------------------------------------------------------------- |
