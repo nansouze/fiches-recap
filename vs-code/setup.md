@@ -1,32 +1,28 @@
 # My VS Code Setup
 
-### Theme
+### Themes
 
-`One Monokai` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
+| Name          | Link                                                                                            |
+| :------------ | :---------------------------------------------------------------------------------------------- |
+| `One Monokai` | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)       |
+
 
 ### Extensions
 
-`French Language Pack` to translate VS Code UI into French. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr)
+| Name                   | Description | Link                                                                                            |
+| :--------------------- | :----------------------------------- |:---------------------------------------------------------------------------------------------- |
+| `French Language Pack` | To translate VS Code UI into French. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr) |
+| `Material Icon Theme` | To get the Material Design icons into your VS Code. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) |
+| `Auto Close Tag` | To automatically close HTML tags. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) |
+| `Auto Rename Tag` | To automatically update matching HTML tags. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) |
+| `Color Highlight` | To highlight colors in CSS code. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) |
+| `HTML Snippets` | To get full HTML tags including HTML5 Snippets. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets) |
+| `HTML CSS Support` | To get HTML id and class attribute completion for Visual Studio Code. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) |
+| `JavaScript (ES6) Code Snippets` | To get code snippets for JavaScript in ES6 syntax (supports both JavaScript and TypeScript). | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) |
+| `Peacock` | To subtly change the color of your Visual Studio Code workspace. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) |
+| `Prettier` | To automatically format code. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
+| `Live Server` | To create a live preview for the current project. | [Download &rarr;](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |
 
-`Material Icon Theme` to get the Material Design icons into your VS Code. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
-`Auto Close Tag` to automatically close HTML tags. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-
-`Auto Rename Tag` to automatically update matching HTML tags. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-
-`Color Highlight` to highlight colors in CSS code. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-
-`HTML Snippets` to get full HTML tags including HTML5 Snippets. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
-
-`HTML CSS Support` to get HTML id and class attribute completion for Visual Studio Code. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-
-`JavaScript (ES6) Code Snippets` to get code snippets for JavaScript in ES6 syntax (supports both JavaScript and TypeScript). [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
-
-`Peacock` to subtly change the color of your Visual Studio Code workspace. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
-
-`Prettier` to automatically format code. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-`Live Server` to create a live preview for the current project. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### Settings
 
