@@ -60,4 +60,4 @@ La liaison avec le HTML est assurée par une balise `<link>`
 ```
 
 Afin d'assurer la séparation entre le contenu (fond) et l'apparence (forme)
-**cette méthode est la voie à suivre**
+**cette méthode est la voie à suivre**.
