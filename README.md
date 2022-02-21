@@ -5,10 +5,14 @@ Des fiches récapitulatives, classées par thèmes.
 
 ## TECHNOS
 - [Html](html/)
-- Css
+- [Css](css/)
 - Js
+- Node
+- Algo
+- SQL
+- Python
 
 ## TOOLS
-- VS Code
-- Terminal
-- Git & GitHub
+- [VS Code](vscode/)
+- [Terminal](terminal/)
+- [Git & GitHub](git-github/)
