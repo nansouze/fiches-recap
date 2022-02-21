@@ -1,4 +1,4 @@
 # Visual Studio Code
 
-- [Setup](setup.md)
+- [My VS Code Setup](setup.md)
 - [Shortcuts](shortcuts.md)
