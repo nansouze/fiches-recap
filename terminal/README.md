@@ -136,7 +136,39 @@ Downloads            Pictures
 
 ```
 
-### `rmdir` - Mais il est vide ce dossier ? Aller hop, poubelle !
+### `mv` - Move (déplacer ou renommer)
+
+```sh
+
+~ mv python.txt ./Documents # déplacer
+
+~ mv README.md readme.md # renommer
+
+```
+
+### `rm` - Remove (supprimez un fichier ou un dossier plein)
+
+```sh
+
+~ rm readme.md # suppression d'un fichier
+
+```
+
+⚠️ **WARNING**
+
+> Il faut utiliser le flag `-r` (recursive) & `-f` (force) avec **précaution.**
+
+```sh
+
+~ rm -rf test # suppression récursive & forcée d'un dossier
+
+```
+
+<p align="center">
+  <img src='assets/img/Rm_rf.png'  width='70%'>
+</p>
+
+### `rmdir` - Remove Directory (supprimer un dossier vide)
 
 Cette commande sert à supprimer une dossier **vide**.
 Son fonctionnement est le même que `mkdir` :
@@ -144,42 +176,6 @@ Son fonctionnement est le même que `mkdir` :
 mint@mint ~ $ rmdir dossierASupprimer/
 mint@mint ~ $ rmdir ../dossierASupprimer/
 mint@mint ~ $ rmdir dossierExistant/dossierASupprimer/
-```
-
-### `rm` - Supprimez un fichier ou un dossier qui ne vous plait pas.
-Cette commande sert à supprimer un fichier, où un dossier plein (contrairement à `rmdir` qui ne peut supprimer que des dossiers vide).
-```shell
-mint@mint ~ $ rm monfichier.extension
-```
-Supprime un fichier
-
-```shell
-mint@mint ~ $ rm -r mondossier/
-```
-Fait une suppression récursive. En gros retenez que c'est avec cette commande que vous pouvez supprimer un dossier contenant d'autres dossiers/fichiers.
-
-```shell
-mint@mint ~ $ rm -rf mondossier/
-```
-Fait une suppression recursive et forcée. **A utiliser avec précaution.**
-
-### `mv` - Déplacer ou renommer ? Vous choisissez.
-Cette commande permet de déplacer ou de renommer un fichier, en fonction de la façon dont vous l'utilisez.
-
-Mettons que vous êtes dans le dossier courant `~`. Dedans vous avez :
-- Documents
-- Images
-- Vidéos
-- test
-
-Pour déplacer `test` dans `Documents`
-```shell
-mint@mint ~ $ mv test Documents
-```
-
-Pour renommer `test` en `supertest`
-```shell
-mint@mint ~ $ mv test supertest
 ```
 
 ### `cp` - Copiez vos fichiers ou vos dossier
