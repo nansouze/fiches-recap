@@ -165,29 +165,34 @@ Downloads            Pictures
 ```
 
 <p align="center">
-  <img src='assets/img/Rm_rf.png'  width='70%'>
+  <img src='assets/img/Rm_rf.png'  width='50%'>
 </p>
 
 ### `rmdir` - Remove Directory (supprimer un dossier vide)
 
-Cette commande sert à supprimer une dossier **vide**.
-Son fonctionnement est le même que `mkdir` :
-```shell
-mint@mint ~ $ rmdir dossierASupprimer/
-mint@mint ~ $ rmdir ../dossierASupprimer/
-mint@mint ~ $ rmdir dossierExistant/dossierASupprimer/
+```sh
+
+~ rmdir Postman
+
 ```
 
-### `cp` - Copiez vos fichiers ou vos dossier
+### `cp` - Copy (copiez vos fichiers ou vos dossiers)
 
-Pour copier un fichier :
-```shell
-mint@mint ~ $ cp chemin/fichier.extension cheminDeDestination/
+```sh
+
+~ cp chemin/fichier.extension cheminDeDestination/
+
 ```
 
-Pour copier un dossier, on ajoute le paramètre -R (copie récursive) :
-```shell
-mint@mint ~ $ cp -R chemin/monDossier/ cheminDeDestination/
+
+⚠️ **WARNING**
+
+> Pour copier un dossier, on ajoute le paramètre -R (copie récursive).
+
+```sh
+
+~ cp -R chemin/monDossier/ cheminDeDestination/
+
 ```
 
 ## Régler les droits sur un fichier/dossier
