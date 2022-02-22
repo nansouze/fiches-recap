@@ -1,4 +1,4 @@
-# Les Nouvelles Balise de Stucture
+# Les nouvelles balises de stucture
 
 <p align="center">
   <img src='assets/img/Schema.png'  width='50%'>
