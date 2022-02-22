@@ -161,7 +161,7 @@ François le roi de saucisse.
 > Le symbole `^` c'est pour `ctrl`. <br>Ex: `ctrl + O` (sauvegarder) & `ctrl + X` (exit)
 
 <p align="center">
-  <img src='assets/img/Nan.png'  width='100%'>
+  <img src='assets/img/Nano.png'  width='100%'>
 </p>
 
 ### `mkdir` - Make Directory
