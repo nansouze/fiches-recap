@@ -250,7 +250,7 @@ François le roi de saucisse.
 
 ```
 
-### `def` - Espace disque
+### `df` - Espace disque
 
 ```sh
 
@@ -282,9 +282,11 @@ map -fstab        0Bi    0Bi    0Bi   100%       0          0  100%   /System/Vo
 
 ```
 
+### `du` - Affiche la taille du dossier actuel
+
 ``` sh
 
-~ Believemy du -h # Affiche la taille du dossier actuel
+~ Believemy du -h
 4,0K    ./Programme Rocket/00_Premier_Site_Internet/recettes
  68K    ./Programme Rocket/00_Premier_Site_Internet/images
  80K    ./Programme Rocket/00_Premier_Site_Internet/sources/polices
@@ -305,14 +307,45 @@ PID   TTY        TIME    CMD
 
 ```
 
+### `top` - Liste des processus en plein écran
+
 ```sh
 
-~ top # Affiche en plein ecran
+~ top
+
+```
+
+⚠️ **WARNING**
+
+> Si un processus consomme beaucoup de `CPU`, il suffit de noter son `PID` (Processus ID).
+> Pour quitter `top`, il suffit de faire `ctrl + c` ou `q`.
+
+<p align="center">
+  <img src='assets/img/Top.png'  width='100%'>
+</p>
+
+### `kill` - Killer un processus
+
+```sh
+
+~ kill 518
+bash: kill: (518) - Operation not permitted
+
+```
+
+⚠️ **WARNING**
+
+> Le processus que nous voulons `killer` appartient à Thomas et nous sommes logguer en tant que Coca.
+> Il faut donc se mettre en `sudo` (Super User DO).
+
+```sh
+
+~ sudo kill 518
 
 ```
 
 <p align="center">
-  <img src='assets/img/Top.png'  width='50%'>
+  <img src='assets/img/Kill.png'  width='100%'>
 </p>
 
 ## Régler les droits sur un fichier/dossier
