@@ -1,4 +1,4 @@
-# Balise de Mise en Forme
+# Balises de mise en forme
 
 | Balise     | Fonction                                         |
 | :--------- | :----------------------------------------------- |
