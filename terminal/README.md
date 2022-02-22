@@ -35,10 +35,25 @@ Le principe est d’appuyer sur la touche `tabulation` pendant la saisie, et l'o
 
 ## Commandes basiques
 
-Elles vont nous permettre de naviguer dasn nos fichiers à l'aide du terminal.
+Elles vont nous permettre de naviguer dans nos fichiers à l'aide du terminal.
 
-### `pwd` - Print Working Directory
-Elle sert à afficher le dossier dans lequel vous vous trouvez actuellement.
+### `man` - Manual (affiche la documentation)
+
+```sh
+
+~ man ls
+
+```
+
+⚠️ **WARNING**
+
+> Pour se déplacer dans la documentation on utilise la barre d'espace.
+
+<p align="center">
+  <img src='assets/img/Manual.png'  width='70%'>
+</p>
+
+### `pwd` - Print Working Directory (affiche le dossier dans lequel on se trouve actuellement)
 
 ```sh
 
