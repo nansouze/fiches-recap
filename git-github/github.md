@@ -8,6 +8,10 @@ Pour faciliter la communication autour du projet, les bons vieux emails fonction
 
 C'est une plateforme de services & un réseau social — Il agit comme un serveur central, permettant de partager son code dans un dépôt [Git](https://git-scm.com/) centralisé et partagé sur internet, mais également de communiquer avec d'autres développeurs par l'intermédiaire de commentaires, d'issues, etc.
 
+<p align="center">
+  <img src='assets/imgg/Files.png'  width='100%'>
+</p>
+
 [GitHub](https://github.com/) est probablement le réseau social de développeurs le plus populaire aujourd'hui.
 
 <p align="center">
