@@ -86,7 +86,7 @@ Downloads            Pictures
 
 > Par convention, les fichiers/dossiers qui commencent par . sont cachés. Pour les voir, il faut utiliser `ls -a`. (a -> pour all)
 
-> Il est possible d'ajouter une mise en liste avec l'option `-l` soit : `ls -l` (permissions, propriétaire, date ...)
+> Il est possible d'ajouter une mise en liste avec l'option `-l` (l -> pour long) soit : `ls -l` (permissions, propriétaire, date ...)
 
 > On peut combiner les deux arguments `ls -la`
 
