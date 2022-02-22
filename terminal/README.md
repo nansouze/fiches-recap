@@ -158,7 +158,7 @@ François le roi de saucisse.
 
 ⚠️ **WARNING**
 
-> Le symbole `^`c'est pour `ctrl`. Ex: `ctrl`+ O (sauvegarder) & `ctrl`+ X (exit)
+> Le symbole `^`, c'est pour `ctrl`. Ex: `ctrl`+ O (sauvegarder) & `ctrl`+ X (exit)
 
 <p align="center">
   <img src='assets/img/Nano.png'  width='50%'>
