@@ -1,4 +1,4 @@
-# Position [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/position)
+# Positions [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/position)
 
 | Position   | Définition                     |
 | :--------- | :----------------------------- |
