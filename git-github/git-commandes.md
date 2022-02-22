@@ -52,6 +52,18 @@ git config --global core.editor nano # ou code pour Visual Studio Code, etc.
 
 ```sh
 
+# Utilisation de 'master' comme nom de la branche initiale.
+# Pour configurer le nom de la branche initiale pour tous les nouveaux dépôts.
+# 'master' -> 'main', 'trunk' & 'development'.
+git config --global init.defaultBranch <nom>
+
+# La branche nouvellement créée peut être rénommée avec:
+git branch -m <nom>
+
+```
+
+```sh
+
 # Activation des couleurs dans le résultat des commandes git
 git config --global color.ui true
 
