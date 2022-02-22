@@ -11,8 +11,7 @@
 | `????????` | Split Editor |
 | `Shift + Alt + Up/Down` | Copier la ligne au dessus / en dessous |
 | `Shift + Alt + F` | Formater le code suivant le setup |
-| `Ctrl + P` | Chercher un fichier par son nom |
-| `Ctrl + Shift + P` | Ouvrir la palette de commandes |
+| `Ctrl + P` | Chercher un fichier par son nom, `:` pour une ligne, `@` pour un symbole|
 | `Ctrl + Shift + P` | Ouvrir la palette de commandes |
 | `????????????????` | Ouvrir le terminal |
 | `Ctrl + 1, Ctrl + 2, Ctrl + 3` | Naviguer dans les onglets|
