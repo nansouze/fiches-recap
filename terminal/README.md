@@ -75,11 +75,11 @@ Downloads            Pictures
 
 > On peut combiner les deux arguments `ls -la`
 
+> Pour savoir si c'est un dossier, on voit au début `d`(directory). Si il y a un `-`, celà veut dire que c'est un fichier.
+
 <p align="center">
   <img src='assets/img/Ls.png'  width='70%'>
 </p>
-
-> Pour savoir si c'est un dossier, on voit au début `d`(directory). Si il y a un `-`, celà veut dire que c'est un fichier.
 
 ### `clear` - Nettoyage du terminal
 
