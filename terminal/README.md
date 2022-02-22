@@ -2,9 +2,11 @@
 
 C'est l'interface graphique qui va vous permettre d'accèder au **SHELL**. (`Bash`, `Zsh` ...).
 
-Jusqu'aux dernières version de macOS, le shell par défaut qui était utilisé, c'était `Bash`. A partir de macOS Catalina, c'est maintenant `Zsh`.
-
-Sur Windows, vous n'avez ni `Bash`, ni `Zsh`. A la place, on a l'invite de commande (`cmd.exe`). Celà nous permet d'éxécuter des commandes `DOS` et d'ouvrir un autre shell qui est `Powershell` mais avec des commandes complètement différentes de `Bash` & `Zsh`.
+| OS          | Shell             |
+| :---------- | :---------------- |
+| `Linux`     | `Bash`, `Zsh` ... |
+| `macOs`     | Jusqu'aux dernières version, le shell par défaut qui était utilisé, c'était `Bash`. <br> A partir de macOS Catalina, c'est maintenant `Zsh`. |
+| `Windows`   | Vous n'avez ni `Bash`, ni `Zsh`. A la place, on a l'invite de commande (`cmd.exe`). <br> Celà nous permet d'éxécuter des commandes `DOS` et d'ouvrir un autre shell qui est `Powershell` mais avec des commandes complètement différentes de `Bash` & `Zsh`. |
 
 ## Avant de commencer
 
