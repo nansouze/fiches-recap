@@ -7,6 +7,7 @@ Des fiches récapitulatives, classées par thèmes.
 - [Html](html/README.md)
 - [Css](css/README.md)
 - Js
+- [Réseau](reseau/README.md)
 - Node
 - Algo
 - SQL
@@ -14,5 +15,6 @@ Des fiches récapitulatives, classées par thèmes.
 
 ## TOOLS
 - [VS Code](vs-code/README.md)
+- [VIM](vim/README.md)
 - [Terminal](terminal/README.md)
 - [Git & GitHub](git-github/README.md)
