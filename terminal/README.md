@@ -10,60 +10,66 @@ C'est l'interface graphique qui va vous permettre d'accèder au **SHELL**. (`Bas
 
 ## Avant de commencer
 
-### Ouverture d'un terminal
-Plusieurs options possibles :
-- En bas a gauche du menu mint, cliquer sur l’icône du terminal
-- Depuis n'importe quel endroit, `ctrl + alt + t` ouvre un terminal (et plus généralement dans la plupart des distributions linux).
-
-### La casse
+### Casse
 Le **shell script** (ou le langage que vous utilisez dans le terminal) est un langage qui est sensible à la casse. C'est à dire que les majuscules et les minuscules sont considérés comme des caractères différents.
 
 Par exemple `pwd` est une commande, alors que `PWD ou Pwd ou pWD...` n'est pas une commande (n'existe pas).
 
-### La tilde `~`
+### Tilde `~`
 Dans le terminal, la tilde représente le répertoire HOME de l'utilisateur (vous). Ce répertoire est celui dans lequel vous trouvez (la plupart du temps) les dossiers suivants  :
-- Bureau
-- Documents
-- Modèles
-- Public
-- Vidéos
-- Images
-- Musique
-- Téléchargements
 
-### L'autocompletion
+```sh
+
+~ ls
+Applications         Library                  
+Desktop              Movies             
+Documents            Music
+Downloads            Pictures
+
+```
+
+### Autocompletion
 Très utile. Les développeurs sont des flemmards, c'est pour ça qu'ils ont mis en place l'autocomplétion.
 Le principe est d’appuyer sur la touche `tabulation` pendant la saisie, et l'ordinateur va compléter tout seul votre saisie **si il peut**.
 
---------------------
-## C'est parti ! Les commandes basiques : naviguez dans vos fichiers à l'aide du terminal.
 
-D'habitude, on utilise un explorateur de fichier, et on clique sur les dossiers pour les ouvrir (ou sur les fichiers). Saviez-vous qu'il était possible d'y naviguer à partir d'un terminal ? Le tout en utilisant seulement trois commandes : `pwd`, `cd` et `ls`.
+## Commandes basiques
 
-### `pwd` - Heu je suis où là ?
-Première commande. Cette commande est extrêmement utile si vous êtes perdu, elle sert à afficher le dossier dans lequel vous vous trouvez actuellement.
+Elles vont nous permettre de naviguer dasn nos fichiers à l'aide du terminal.
 
-Entrez `pwd` dans le terminal et appuyez sur entrée.
-```shell
-mint@mint ~ $ pwd
-/home/mint
-```
-`pwd` veut dire "print working directory" et sert à afficher le répertoire courant.
-Dans notre cas, le répertoire courant lors de l'ouverture du terminal est `/home/mint`.
+### `pwd` - Print Working Directory
+Elle sert à afficher le dossier dans lequel vous vous trouvez actuellement.
 
-### `ls` - Un peu de lumière svp !
-Cette commande sert à afficher la liste des fichier du répertoire courant.
-Tapez `ls` dans le terminal et appuyez sur entrée.
-```shell
-mint@mint ~ $ ls
-Bureau   Documents  Modèles  Public           Vidéos
-Desktop  Images     Musique  Téléchargements
+```sh
+
+~ pwd
+/Users/fsb
+
 ```
 
-Par convention, les fichiers/dossiers qui commencent par . sont cachés.
-Pour les voir, il faut utiliser `ls -a`.
+### `ls` - Lister le contenu d'un répertoire
 
-Il est possible d'ajouter une mise en liste avec l'option `-l` soit : `ls -l`
+```sh
+
+~ ls
+Applications         Library                  
+Desktop              Movies             
+Documents            Music
+Downloads            Pictures
+
+```
+
+⚠️ **WARNING**
+
+> Par convention, les fichiers/dossiers qui commencent par . sont cachés. Pour les voir, il faut utiliser `ls -a`. (a -> pour all)
+
+> Il est possible d'ajouter une mise en liste avec l'option `-l` soit : `ls -l` (permissions, propriétaire, date ...)
+
+> On peut combiner les 2 `ls -la`
+
+<p align="center">
+  <img src='assets/img/Ls.png'  width='70%'>
+</p>
 
 ### `cd` - C'est naze ici, je me casse !
 
