@@ -107,7 +107,7 @@ Downloads            Pictures
 
 ```
 
-## Créez, copiez, et déplacez des fichiers.
+## Jouer avec les fichiers & les dossiers
 
 ### `touch` - Créer un nouveau fichier
 
@@ -120,19 +120,21 @@ Downloads            Pictures
 
 ### `mkdir` - Make Directory
 
-Pour créer un dossier, utilisez la commande `mkdir`
-```shell
-mint@mint ~ $ mkdir nouveauDossier/
-```
-Créera un dossier dans le répertoire courant.
+```sh
 
-Autres exemples d'utilisation :
-```shell
-mint@mint ~ $ mkdir ../nouveauDossier/
-mint@mint ~ $ mkdir dossierExistant/nouveauDossier/
+~ mkdir Python
+~ mkdir Documents/Python
+
 ```
 
-Vous constatez que mkdir ne se limite pas au dossier actuel, vous pouvez aussi créer des dossiers via mkdir `chemin/nouveauDossier`
+### `open` - Ouvrir un fichier ou dossier
+
+```sh
+
+~ open . # le point, représente le dossier courant
+~ open python.txt
+
+```
 
 ### `rmdir` - Mais il est vide ce dossier ? Aller hop, poubelle !
 
