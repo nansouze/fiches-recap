@@ -101,19 +101,24 @@ Downloads            Pictures
 
 ```sh
 
-
+~ cd Pictures
+~ cd ..
+~ cd ../Music
 
 ```
 
-Pour entrez dans un dossier tapez `cd nouveauDossier/`
-
-Pour revenir dans le dossier parent tapez `cd ../`
-
-Dans chaque dossier, vous avez `.` qui représente le dossier dans lequel vous êtes, et `..` qui représente le dossier parent.
-
----
 ## Créez, copiez, et déplacez des fichiers.
-### `mkdir` - Aller hop, un nouveau dossier !
+
+### `touch` - Créer un nouveau fichier
+
+```sh
+
+~ touch python.txt
+~ touch Documents/readme.txt
+
+```
+
+### `mkdir` - Make Directory
 
 Pour créer un dossier, utilisez la commande `mkdir`
 ```shell
@@ -137,16 +142,6 @@ Son fonctionnement est le même que `mkdir` :
 mint@mint ~ $ rmdir dossierASupprimer/
 mint@mint ~ $ rmdir ../dossierASupprimer/
 mint@mint ~ $ rmdir dossierExistant/dossierASupprimer/
-```
-
-### `touch` - Un nouveau fichier ?
-Cette commande sert à créer un nouveau fichier.
-Fonctionnement classique :
-
-```shell
-mint@mint ~ $ touch monfichier.extension
-mint@mint ~ $ touch ../dossierExistant/monfichier.extension
-mint@mint ~ $ touch dossierExistant/monfichier.extension
 ```
 
 ### `rm` - Supprimez un fichier ou un dossier qui ne vous plait pas.
