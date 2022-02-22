@@ -47,6 +47,14 @@ Elle sert à afficher le dossier dans lequel vous vous trouvez actuellement.
 
 ```
 
+⚠️ **WARNING**
+
+> Petite astuce, dans un terminal si on surligne un block de texte et qu'on appuie sur la molette de la souris, on va automatiquement coller ce que nous avions sélectionné.
+
+<p align="center">
+  <img src='assets/img/Pwd.png'  width='70%'>
+</p>
+
 ### `ls` - Lister le contenu d'un répertoire
 
 ```sh
@@ -65,24 +73,36 @@ Downloads            Pictures
 
 > Il est possible d'ajouter une mise en liste avec l'option `-l` soit : `ls -l` (permissions, propriétaire, date ...)
 
-> On peut combiner les 2 `ls -la`
+> On peut combiner les deux arguments `ls -la`
 
 <p align="center">
   <img src='assets/img/Ls.png'  width='70%'>
 </p>
 
-### `cd` - C'est naze ici, je me casse !
+> Pour savoir si c'est un dossier, on voit au début `d`(directory). Si il y a un `-`, celà veut dire que c'est un fichier.
 
-Cette commande sert à se déplacer parmi les fichiers.
-En tapant ls, vous avez précédemment listé les fichiers de votre répertoire courant. Maintenant, essayez de rentrer dans le dossier `Documents` en tapant `cd Documents/`
+### `clear` - Nettoyage du terminal
 
-```shell
-mint@mint ~ $ ls
-Bureau   Documents  Modèles  Public           Vidéos
-Desktop  Images     Musique  Téléchargements
+```sh
 
-mint@mint ~ $ cd Documents/
-mint@mint ~/Documents $
+~ clear
+
+```
+
+### `reset` - Relance le terminal
+
+```sh
+
+~ reset
+
+```
+
+### `cd` - Change Directory
+
+```sh
+
+
+
 ```
 
 Pour entrez dans un dossier tapez `cd nouveauDossier/`
