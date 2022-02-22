@@ -133,6 +133,37 @@ Downloads            Pictures
 
 ```
 
+### `cat` - Afficher le contenu du fichier
+
+```sh
+
+~ cat test.txt
+Coucou,
+Je suis Nansouze.
+François le roi de saucisse.
+
+```
+
+⚠️ **WARNING**
+
+> On peut aussi utiliser `head` (5 premières lignes) & `tail` (5 dernières lignes).
+
+### `nano` - Editer un fichier
+
+```sh
+
+~ nano test.txt
+
+```
+
+⚠️ **WARNING**
+
+> Le symbole `^`c'est pour `ctrl`. Ex: `ctrl`+ O (sauvegarder) & `ctrl`+ X (exit)
+
+<p align="center">
+  <img src='assets/img/Nano.png'  width='50%'>
+</p>
+
 ### `mkdir` - Make Directory
 
 ```sh
@@ -146,7 +177,7 @@ Downloads            Pictures
 
 ```sh
 
-~ open . # le point, représente le dossier courant
+~ open . # Point, représente le dossier courant
 ~ open python.txt
 
 ```
@@ -155,9 +186,9 @@ Downloads            Pictures
 
 ```sh
 
-~ mv python.txt ./Documents # déplacer
+~ mv python.txt ./Documents # Déplacer
 
-~ mv README.md readme.md # renommer
+~ mv README.md readme.md # Renommer
 
 ```
 
@@ -218,6 +249,52 @@ Downloads            Pictures
 ~ cp chemin/fichier.extension cheminDeDestination/
 
 ```
+
+### `def` - Espace disque
+
+```sh
+
+~ df
+Filesystem     512-blocks      Used Available Capacity iused      ifree %iused  Mounted on
+/dev/disk1s5s1  976490576  30765480 458828712     7%  577694 2294143560    0%   /
+devfs                 405       405         0   100%     714          0  100%   /dev
+/dev/disk1s4    976490576   4194344 458828712     1%       2 2294143560    0%   /System/Volumes/VM
+/dev/disk1s2    976490576   1197624 458828712     1%    4097 2294143560    0%   /System/Volumes/Preboot
+/dev/disk1s6    976490576      6832 458828712     1%      19 2294143560    0%   /System/Volumes/Update
+/dev/disk1s1    976490576 479042456 458828712    52% 1317433 2294143560    0%   /System/Volumes/Data
+map auto_home           0         0         0   100%       0          0  100%   /System/Volumes/Data/home
+map -fstab              0         0         0   100%       0          0  100%   /System/Volumes/Data/Network/Servers
+
+```
+
+``` sh
+
+~ df -h # -h -> Human readable
+Filesystem       Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1s5s1  466Gi   15Gi  219Gi     7%  577694 2294121280    0%   /
+devfs           203Ki  203Ki    0Bi   100%     714          0  100%   /dev
+/dev/disk1s4    466Gi  2.0Gi  219Gi     1%       2 2294121280    0%   /System/Volumes/VM
+/dev/disk1s2    466Gi  585Mi  219Gi     1%    4097 2294121280    0%   /System/Volumes/Preboot
+/dev/disk1s6    466Gi  3.3Mi  219Gi     1%      19 2294121280    0%   /System/Volumes/Update
+/dev/disk1s1    466Gi  228Gi  219Gi    52% 1317470 2294121280    0%   /System/Volumes/Data
+map auto_home     0Bi    0Bi    0Bi   100%       0          0  100%   /System/Volumes/Data/home
+map -fstab        0Bi    0Bi    0Bi   100%       0          0  100%   /System/Volumes/Data/Network/Servers
+
+```
+
+``` sh
+
+~ Believemy du -h # Affiche la taille du dossier actuel
+4,0K    ./Programme Rocket/00_Premier_Site_Internet/recettes
+ 68K    ./Programme Rocket/00_Premier_Site_Internet/images
+ 80K    ./Programme Rocket/00_Premier_Site_Internet/sources/polices
+ 80K    ./Programme Rocket/00_Premier_Site_Internet/sources
+168K    ./Programme Rocket/00_Premier_Site_Internet
+176K    ./Programme Rocket
+184K    .
+
+```
+
 
 ## Régler les droits sur un fichier/dossier
 
