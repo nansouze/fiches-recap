@@ -295,6 +295,25 @@ map -fstab        0Bi    0Bi    0Bi   100%       0          0  100%   /System/Vo
 
 ```
 
+### `ps` - Liste des processus qui tournent sur la machine
+
+```sh
+
+~ ps
+PID   TTY        TIME    CMD
+36362 ttys000    0:00.35 -zsh
+
+```
+
+```sh
+
+~ top # Affiche en plein ecran
+
+```
+
+<p align="center">
+  <img src='assets/img/Top.png'  width='50%'>
+</p>
 
 ## Régler les droits sur un fichier/dossier
 
