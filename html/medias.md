@@ -1,8 +1,8 @@
 # Médias
 
-## Les Images
+## Image
 
-### Ajouter Image
+### Ajouter image
 
 ```html
 
@@ -10,7 +10,7 @@
 
 ```
 
-### Les Figures
+### Figure
 
 La figure, sa légende et son contenu sont référencés comme une seule unité.
 
@@ -24,7 +24,7 @@ La figure, sa légende et son contenu sont référencés comme une seule unité.
 
 ```
 
-### Les Favicons (ou Icônes) `<head>`
+### Favicons (Icônes) `<head>`
 
 ```html
 
