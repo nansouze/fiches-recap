@@ -199,7 +199,6 @@ Downloads            Pictures
 
 ```
 
-
 ⚠️ **WARNING**
 
 > Pour copier un dossier, on ajoute le paramètre -R (copie récursive).
@@ -207,6 +206,16 @@ Downloads            Pictures
 ```sh
 
 ~ cp -R chemin/monDossier/ cheminDeDestination/
+
+```
+
+## Bonus
+
+### `say` - Dire (faire parler son terminal)
+
+```sh
+
+~ cp chemin/fichier.extension cheminDeDestination/
 
 ```
 
