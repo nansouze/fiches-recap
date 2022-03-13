@@ -5,6 +5,10 @@ Le module `CSS Grid Layout` (modèle de disposition en grille) est un module de 
 - [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS Grid Functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#css_grid_functions)
 
+<p align="center">
+  <img src='assets/img/CSS_Grid.jpg'  width='70%'>
+</p>
+
 ## Code
 
 `Ex1`
