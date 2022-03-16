@@ -4,7 +4,7 @@
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
 - [Apprendre Git par la pratique](https://learngitbranching.js.org/)
 
-## Obtenir la version de git
+## `git --version` - Obtenir la version de git
 
 ```sh
 
@@ -14,7 +14,7 @@ git version 2.35.1
 
 ```
 
-## Obtenir de l'aide
+## `git --help` - Obtenir de l'aide
 
 ```sh
 
@@ -26,7 +26,7 @@ git [commande] -h
 
 ```
 
-## Configuration des outils
+## `git config` - Configuration des outils
 
 Cela va permettre de configurer les informations de l'utilisateur pour tous les dépôts locaux.
 
@@ -74,11 +74,14 @@ git config --global color.ui true
 
 > Pour vérifier la configutation complète: `git config -l`. Cette commande va afficher tous les réglages actifs de `git`.
 
-## Créer des dépots
+## `git init` - Initialiser où Créer un dépot local
 
 ```sh
 
-# Crée un dépôt local à partir du nom spécifié
+# Initialiser un dépot local
+git init
+
+# Créer un dépôt local à partir du nom spécifié
 git init [nom-du-projet]
 
 # Message généré après l'initialisation (dossier caché .git)
@@ -94,27 +97,12 @@ git clone [url] [nom-du-projet]
 ```
 
 
-## Vérifier l'état courant du repo local
+## `git status` - Vérifier l'état courant du dépot local
 
 ```sh
 
 # Récapitule l'état local (workspace et index) des fichiers du projet géré avec git
 git status
-
-```
-
-```sh
-
-# Modifications qui vont être comittées
-git add <files>
-
-# Différentes façon ajouter un fichier
-git add Brief.txt
-git add .
-git add -A
-
-# Pour unstage un fichier
-git rm --cached Brief.txt
 
 ```
 
@@ -133,3 +121,20 @@ git rm --cached Brief.txt
 <p align="center">
   <img src='assets/img/Git_Status_1.png'  width='50%'>
 </p>
+
+## `git add` - Ajouter un fichier
+
+```sh
+
+# Modifications qui vont être comittées
+git add <files>
+
+# Différentes façon ajouter un fichier
+git add Brief.txt
+git add .
+git add -A
+
+# Pour unstage un fichier
+git rm --cached Brief.txt
+
+```
