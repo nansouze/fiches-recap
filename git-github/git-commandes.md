@@ -92,14 +92,6 @@ Initialized empty Git repository in C:/Users/fsb/Desktop/Projet/.git/
 
 ```
 
-```sh
-
-# Télécharge un projet et tout son historique de versions (par défaut : nom du repo sur le remote)
-git clone [url] [nom-du-projet]
-
-```
-
-
 ### `git status` - Vérifier l'état courant du dépot
 
 ```sh
@@ -205,4 +197,31 @@ git push -u origin master
 
 ```
 
+### Récupérer un dépôt distant
 
+```sh
+
+# Télécharge un projet et tout son historique de versions (par défaut : nom du repo sur le remote)
+git clone [url] [nom-du-projet]
+
+```
+
+### Changer git remote origin
+
+```sh
+
+git remote set-url origin [url]
+
+```
+
+### Envoyer & recevoir les mises à jour
+
+```sh
+
+# Envoyer
+git push
+
+# Recevoir
+git pull
+
+```
