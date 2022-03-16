@@ -20,4 +20,4 @@
 
 <br>
 
-Toutes les action peuvent être combinées (bien respecter l'ordre) -> `:wq!`
+Toutes les actions peuvent être combinées (bien respecter l'ordre) -> `:wq!`
