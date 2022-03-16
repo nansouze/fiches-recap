@@ -10,3 +10,5 @@
 ~ vimtutor fr
 
 ```
+
+Mode INSERT -> `I`
