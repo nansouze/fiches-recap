@@ -171,12 +171,38 @@ git log
 
 ## Dépôt Distant (GitHub)
 
-### Créer son 1er dépôt sur GitHub
+### Créer son 1er dépôt via l'interface de GitHub
 
 <p align="center">
-  <img src='assets/img/Repo_Create.png'  width='70%'>
+  <img src='assets/img/Repo_Create.png'  width='100%'>
 </p>
 
 <p align="center">
-  <img src='assets/img/Repo_Create.png_2.png'  width='70%'>
+  <img src='assets/img/Repo_Create_2.png'  width='70%'>
 </p>
+
+### Créer son 1er dépôt via le terminal
+
+```sh
+
+echo "# mon-projet" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/nansouze/mon-projet.git
+git push -u origin master
+
+```
+
+### Associer un dépôt local à un dépôt distant
+
+```sh
+
+git remote add origin https://github.com/nansouze/mon-projet.git
+git branch -M master
+git push -u origin master
+
+```
+
+
