@@ -3,6 +3,7 @@
 - [Cheat Sheet Git](assets/pdf/Github_Git_Cheat_Sheet.pdf)
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
 - [Apprendre Git par la pratique](https://learngitbranching.js.org/)
+- [Git Explorer](https://gitexplorer.com/)
 
 ## Général
 
