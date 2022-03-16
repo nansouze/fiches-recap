@@ -103,6 +103,21 @@ git status
 
 ```
 
+```sh
+
+# Modifications qui vont être comittées
+git add <files>
+
+# Différentes façon ajouter un fichier
+git add Brief.txt
+git add .
+git add -A
+
+# Pour unstage un fichier
+git rm --cached Brief.txt
+
+```
+
 **En rouge:**
 
 <p align="center">
@@ -116,5 +131,5 @@ git status
 **En vert:**
 
 <p align="center">
-  <img src='assets/img/Git_Status_1.png'  width='70%'>
+  <img src='assets/img/Git_Status_1.png'  width='50%'>
 </p>
