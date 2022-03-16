@@ -4,7 +4,7 @@
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
 - [Apprendre Git par la pratique](https://learngitbranching.js.org/)
 
-## `git --version` - Obtenir la version de git
+### `git --version` - Obtenir la version de git
 
 ```sh
 
@@ -14,7 +14,7 @@ git version 2.35.1
 
 ```
 
-## `git --help` - Obtenir de l'aide
+### `git --help` - Obtenir de l'aide
 
 ```sh
 
@@ -26,7 +26,7 @@ git [commande] -h
 
 ```
 
-## `git config` - Configuration des outils
+### `git config` - Configuration des outils
 
 Cela va permettre de configurer les informations de l'utilisateur pour tous les dépôts locaux.
 
@@ -74,7 +74,7 @@ git config --global color.ui true
 
 > Pour vérifier la configutation complète: `git config -l`. Cette commande va afficher tous les réglages actifs de `git`.
 
-## `git init` - Initialiser où Créer un dépot local
+### `git init` - Initialiser où Créer un dépot local
 
 ```sh
 
@@ -97,7 +97,7 @@ git clone [url] [nom-du-projet]
 ```
 
 
-## `git status` - Vérifier l'état courant du dépot local
+### `git status` - Vérifier l'état courant du dépot local
 
 ```sh
 
@@ -122,7 +122,7 @@ git status
   <img src='assets/img/Git_Status_1.png'  width='50%'>
 </p>
 
-## `git add` - Ajouter un fichier
+### `git add` - Ajouter un fichier
 
 ```sh
 
