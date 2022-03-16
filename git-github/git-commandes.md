@@ -4,6 +4,8 @@
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
 - [Apprendre Git par la pratique](https://learngitbranching.js.org/)
 
+## Général
+
 ### `git --version` - Obtenir la version de git
 
 ```sh
@@ -47,7 +49,7 @@ git config --global user.email "john.wick@lecroquemitaine.fr"
 ```sh
 
 # Choix de l'éditeur de texte utilisé pour écrire les messages de commit:
-git config --global core.editor nano # ou code pour Visual Studio Code, etc.
+git config --global core.editor nano # ou code pour Visual Studio Code, ou vim pour VIM etc.
 
 ```
 
@@ -74,8 +76,9 @@ git config --global color.ui true
 
 > Pour vérifier la configutation complète: `git config -l`. Cette commande va afficher tous les réglages actifs de `git`.
 
-### `git init` - Initialiser où Créer un dépot local
+## Dépôt Local
 
+### `git init` - Initialiser où Créer un dépôt
 ```sh
 
 # Initialiser un dépot local
@@ -97,7 +100,7 @@ git clone [url] [nom-du-projet]
 ```
 
 
-### `git status` - Vérifier l'état courant du dépot local
+### `git status` - Vérifier l'état courant du dépot
 
 ```sh
 
@@ -138,3 +141,42 @@ git add -A
 git rm --cached Brief.txt
 
 ```
+
+### `git commit -m` - Valider les modifications
+
+```sh
+
+# Modifications qui vont être comittées
+git commit -m "Ceci est mon 1er commit"
+
+```
+
+### `git commit --amend` - Modifier son dernier commit
+
+```sh
+
+# Modification du dernier commit
+git commit --amend
+
+```
+
+### `git log` - Historique des modifications
+
+```sh
+
+# Afficher tous les commits
+git log
+
+```
+
+## Dépôt Distant (GitHub)
+
+### Créer son 1er dépôt sur GitHub
+
+<p align="center">
+  <img src='assets/img/Repo_Create.png'  width='70%'>
+</p>
+
+<p align="center">
+  <img src='assets/img/Repo_Create.png_2.png'  width='70%'>
+</p>
