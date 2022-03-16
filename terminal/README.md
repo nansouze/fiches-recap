@@ -47,7 +47,7 @@ Elles vont nous permettre de naviguer dans nos fichiers à l'aide du terminal.
 
 ⚠️ **WARNING**
 
-> Pour se déplacer dans la documentation on utilise la `barre d'espace. Pour sortir de la doc, on utilise la touche `q`.
+> Pour se déplacer dans la documentation on utilise la `barre d'espace`. Pour sortir de la doc, on utilise la touche `q`.
 
 <p align="center">
   <img src='assets/img/Manual.png'  width='70%'>
