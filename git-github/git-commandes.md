@@ -90,11 +90,6 @@ git clone [url] [nom-du-projet]
 
 ```
 
-## Pour les premiers commits
-
-<p align="center">
-  <img src='assets/img/Premiers_Commits.png'  width='100%'>
-</p>
 
 ## Vérifier l'état courant du repo local
 
@@ -105,6 +100,14 @@ git status
 
 ```
 
+**En rouge:**
 
-- **En rouge:** modifié mais non pris en compte (= en workspace)
-- **En vert:** modifié et pris en compte (= ajouté à l'index)
+<p align="center">
+  <img src='assets/img/'  width='100%'>
+</p>
+
+**En vert:**
+
+<p align="center">
+  <img src='assets/img/'  width='100%'>
+</p>
