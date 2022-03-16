@@ -81,6 +81,9 @@ git config --global color.ui true
 # Crée un dépôt local à partir du nom spécifié
 git init [nom-du-projet]
 
+# Message généré après l'initialisation (dossier caché .git)
+Initialized empty Git repository in C:/Users/fsb/Desktop/Projet/.git/
+
 ```
 
 ```sh
@@ -103,7 +106,7 @@ git status
 **En rouge:**
 
 <p align="center">
-  <img src='assets/img/'  width='100%'>
+  <img src='assets/img/Git_Status.png'  width='100%'>
 </p>
 
 **En vert:**
