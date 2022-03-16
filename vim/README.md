@@ -11,4 +11,13 @@
 
 ```
 
-Mode INSERT -> `I`
+- Mode INSERT -> `I`
+- Sortir du mode -> `Echap`
+- Utiliser fonction -> `:`
+- Quitter sans sauvegarder -> `q` 
+- Forcer (pas de modal de confirmation) -> `!`
+- Ecrire -> `w`
+
+<br>
+
+Toutes les action peuvent être combinées (bien respecter l'ordre) -> `:wq!`
