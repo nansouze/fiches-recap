@@ -106,11 +106,15 @@ git status
 **En rouge:**
 
 <p align="center">
-  <img src='assets/img/Git_Status.png'  width='100%'>
+  <img src='assets/img/Git_Status.png'  width='70%'>
+</p>
+
+<p align="center">
+  <img src='assets/img/Git_Status_2.png'  width='70%'>
 </p>
 
 **En vert:**
 
 <p align="center">
-  <img src='assets/img/'  width='100%'>
+  <img src='assets/img/Git_Status_1.png'  width='70%'>
 </p>
