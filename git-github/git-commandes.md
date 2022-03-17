@@ -331,3 +331,7 @@ git rebase --continue
 git merge [nom-de-la-branche]
 
 ```
+
+<p align="center">
+  <img src='assets/img/Git_Rebase.png'  width='50%'>
+</p>
