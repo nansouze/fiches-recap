@@ -320,8 +320,14 @@ git branch --no-merged
 ```sh
 
 # Avant de publier sur GitHub
-# Permet de garder un historique clair (eviter commits de fusion)
+# Permet de garder un historique clair (éviter les commits de fusion)
 # Fusion à la base à 3 sources -> Elle se transforme en Fast Forward 
 
+# à la place de git merge master [nom-de-la-branche]
+git rebase master [nom-de-la-branche]
+
+git rebase --continue
+
+git merge [nom-de-la-branche]
 
 ```
