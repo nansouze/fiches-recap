@@ -2,6 +2,7 @@
 
 - [Cheat Sheet Git](assets/pdf/Github_Git_Cheat_Sheet.pdf)
 - [GitFlow, méthode de travail très efficace pour gérer les branches](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow)
+- [Découvrir Git](https://www.atlassian.com/fr/git/tutorials/learn-git-with-bitbucket-cloud)
 - [Apprendre Git par la pratique](https://learngitbranching.js.org/)
 - [Git Explorer](https://gitexplorer.com/)
 
@@ -123,7 +124,7 @@ git status
 ```sh
 
 # Modifications qui vont être comittées
-git add <files>
+git add [files]
 
 # Différentes façon ajouter un fichier
 git add Brief.txt
@@ -141,15 +142,6 @@ git rm --cached Brief.txt
 
 # Modifications qui vont être comittées
 git commit -m "Ceci est mon 1er commit"
-
-```
-
-### `git commit --amend` - Modifier son dernier commit
-
-```sh
-
-# Modification du dernier commit
-git commit --amend
 
 ```
 
@@ -229,4 +221,96 @@ git pull
 
 ## Branches
 
+### Afficher les branches existantes
 
+```sh
+
+git branch
+
+```
+
+### Créer une branche
+
+```sh
+
+git branch [nom-de-la-branche]
+
+```
+
+### Changer de branche
+
+```sh
+
+git checkout [nom-de-la-branche]
+
+```
+
+### Publier sur une nouvelle branche (push)
+
+```sh
+
+git push -u origin [nom-de-la-branche]
+
+```
+
+### Fusionner plusieurs branches
+
+```sh
+
+# Deux types de fusion:
+# Fusion Fast Forward (avance rapide) -> si master n'a pas changé. c'est le meilleur des cas 😄
+# Fusion à 3 sources (commit à partir de laquelle on a crée notre nouvelle branche / dernier commit master / dernier commit de notre branche)
+
+git merge [nom-de-la-branche]
+
+```
+
+⚠️ **WARNING**
+> Il faut bien se positionner sur la bonne branche pour la fusion. Par exemple, si je suis sur `master` et que j'ai une 2e branche `avis`, c'est cette dernière qui sera fusionner sur `master`.
+
+### Supprimer une branche après fusion en local
+
+```sh
+
+git branch -d [nom-de-la-branche]
+
+```
+
+### Supprimer une branche après fusion sur GitHub
+
+```sh
+
+git push origin --delete [nom-de-la-branche]
+
+```
+
+## TIPS
+
+### `git commit --amend` - Modifier son dernier commit
+
+```sh
+
+# Modification du dernier commit
+git commit --amend
+
+```
+
+### Undo du dernier commit (n'annule pas le dernier commit mais en crée un nouveau)
+
+```sh
+
+git revert HEAD
+
+```
+
+### Liste des branches
+
+```sh
+
+# Fusionnées
+git branch --merged
+
+# Non Fusionnées
+git branch --no-merged
+
+```
