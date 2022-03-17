@@ -280,7 +280,7 @@ git branch -d [nom-de-la-branche]
 
 ```sh
 
-git push origin --delete [nom-de-la-branche]
+git push -u origin --delete [nom-de-la-branche]
 
 ```
 
