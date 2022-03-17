@@ -314,3 +314,14 @@ git branch --merged
 git branch --no-merged
 
 ```
+
+### Modifier ses branches avec git rebase
+
+```sh
+
+# Avant de publier sur GitHub
+# Permet de garder un historique clair (eviter commits de fusion)
+# Fusion à la base à 3 sources -> Elle se transforme en Fast Forward 
+
+
+```
