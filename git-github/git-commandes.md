@@ -245,7 +245,7 @@ git checkout [nom-de-la-branche]
 
 ```
 
-### Publier sur une nouvelle branche (push)
+### Publier sur une nouvelle branche sur GitHub
 
 ```sh
 
