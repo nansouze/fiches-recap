@@ -286,7 +286,7 @@ git push origin --delete [nom-de-la-branche]
 
 ## TIPS
 
-### `git commit --amend` - Modifier son dernier commit
+### Modifier son dernier commit
 
 ```sh
 
