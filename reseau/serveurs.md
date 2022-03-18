@@ -28,7 +28,7 @@ Le serveur DNS va s'occuper de récupérer le `nom de domaine` et de rechercher 
 | `believemy.com` | `194.47.175.14`    |
 
 
-**blog.facebook.com.** -> `Extension` + `Adresse Site` + `Sous Domaine`
+**blog.facebook.com.** -> `Extension` + `Adresse Site` + `Sous Domaine` = `Nom de Domaine`
 
 | Domaine             | Content              |
 | :------------------ | :------------------- |
