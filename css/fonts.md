@@ -23,7 +23,8 @@ https://fonts.google.com/ propose une grande quantité de fonts facilement utili
     - `@import` à placer dans le CSS
 4. `font-family: ...` dans le CSS permet de définir l'usage de la font
 
-> **Attention** un indicateur indiquant le temps de chargement, il est fortement recommandé d'y faire attention. Trop de fonts selectionnées  rendrait la page HTML longue à charger.
+⚠️ **WARNING**
+> Un indicateur indiquant le temps de chargement, il est fortement recommandé d'y faire attention. Trop de fonts selectionnées  rendrait la page HTML longue à charger.
 
 ## Utiliser des fonts spécifiques
 
