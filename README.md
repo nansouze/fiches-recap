@@ -6,7 +6,7 @@ Des fiches récapitulatives, classées par thèmes.
 ## TECHNOS
 - [Html](html/README.md)
 - [Css](css/README.md)
-- Js
+- Javascript
 - [Réseau](reseau/README.md)
 - Node
 - Algo
