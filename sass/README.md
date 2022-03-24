@@ -19,7 +19,7 @@
 
 Il suffit de télécharger le bon fichier en fonction de son OS et de glisser `dart-sass` par exemple dans `C:\Program Files`.
 
-### Ajouter SASS à nos variables d'environnement [Documentation]((https://katiek2.github.io/path-doc/))
+### Ajouter SASS à nos variables d'environnement [Documentation](https://katiek2.github.io/path-doc/)
 
 1. Versions de Windows
    * Pour Windows 8 ou 10 -> Appuyer sur la touche `Windows` et chercher `Système (Panneau de configuration)`.
@@ -27,7 +27,8 @@ Il suffit de télécharger le bon fichier en fonction de son OS et de glisser `d
 2. Paramètres avancés du système
 3. Variables d'environnement ...
 4. En dessous de Variables système, trouver la variable `PATH` et cliquer sur Modifier. Sinon il faudra la créer en appuyant sur Nouvelle.
-5. Ajouter votre répertoire au début de la varible suivi par un point virgule. Ex: si la valeur était `C:\Windows\System32`, il faut la changer en `C:\Users\Me\bin;C:\Windows\System32`.
+5. Ajouter votre répertoire en appuyant sur Nouveau.
 6. Appuyer sur OK
 7. Redémarrer le Terminal
+8. Pour vérifier si tout est ok, il faut taper `sass --version`
 
