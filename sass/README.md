@@ -35,7 +35,7 @@ Il suffit de télécharger le bon fichier en fonction de son OS et de glisser `d
 ## Utilisation
 
 <p align="center">
-  <img src='assets/img/Sass_Projet.png'  width='50%'>
+  <img src='assets/img/Sass_Projet.png'  width='25%'>
 </p>
 
 
@@ -45,7 +45,10 @@ Il suffit de télécharger le bon fichier en fonction de son OS et de glisser `d
 sass assets/sass/defaut.scss assets/css/defaut.css
 
 # 2e façon
-sass assets/sass/defaut.scss assets/css/defaut.css
+sass --watch assets/sass/defaut.scss assets/css/defaut.css
+
+# 3e façon (meilleure méthode)
+sass --watch assets/sass:assets/css/
 
 ```
 
