@@ -50,5 +50,9 @@ sass --watch assets/sass/defaut.scss assets/css/defaut.css
 # 3e façon (meilleure méthode)
 sass --watch assets/sass:assets/css/
 
+# 4e façon (meilleure méthode + argument pour mettre notre fichier css sur une ligne)
+# --style -> -s (par défaut, expanded)
+sass --watch assets/sass:assets/css/ -s compressed
+
 ```
 
