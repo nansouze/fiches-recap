@@ -32,3 +32,20 @@ Il suffit de télécharger le bon fichier en fonction de son OS et de glisser `d
 7. Redémarrer le Terminal
 8. Pour vérifier si tout est ok, il faut taper `sass --version`
 
+## Utilisation
+
+<p align="center">
+  <img src='assets/img/Sass_Projet.png'  width='50%'>
+</p>
+
+
+```sh
+
+# 1ere façon
+sass assets/sass/defaut.scss assets/css/defaut.css
+
+# 2e façon
+sass assets/sass/defaut.scss assets/css/defaut.css
+
+```
+
