@@ -35,7 +35,7 @@ Il suffit de télécharger le bon fichier en fonction de son OS et de glisser `d
 ## Utilisation
 
 <p align="center">
-  <img src='assets/img/Sass_Projet.png'  width='25%'>
+  <img src='assets/img/Sass_Projet.png'  width='20%'>
 </p>
 
 
@@ -56,3 +56,15 @@ sass --watch assets/sass:assets/css/ -s compressed
 
 ```
 
+## Variables
+
+```css
+
+$primaryColor: orange;
+
+body {
+    background-color: white;
+    color: $primaryColor;
+}
+
+```
