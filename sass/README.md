@@ -60,11 +60,44 @@ sass --watch assets/sass:assets/css/ -s compressed
 
 ```css
 
-$primaryColor: orange;
+$couleurPrincipale: orange;
 
 body {
     background-color: white;
-    color: $primaryColor;
+    color: $couleurPrincipale;
+}
+
+```
+
+## Commentaires
+
+```css
+
+// Commentaire monoligne
+
+/*
+    Commentaire
+    sur plusieurs lignes
+    différentes
+*/
+
+```
+
+## Opérations Mathématiques
+
+```css
+
+/*
+    Opérateurs :
+        + : addition
+        - : soustraction
+        * : multiplication
+        / : division
+        % : modulo (restant d'une division)
+*/
+
+html {
+    font-size: 15px * 2;
 }
 
 ```
