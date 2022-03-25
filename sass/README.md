@@ -101,3 +101,43 @@ html {
 }
 
 ```
+
+## Imbrications
+
+```css
+
+header {
+    background-color: $couleurPrincipale;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    ul {
+        margin: 0; padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    nav {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+// Imbrication des propriétés (nesting)
+// N'oubliez pas les ":" :)
+
+p {
+  font: {
+    family: arial;
+    weight: bold;
+    size: 2em;
+  }
+}
+
+```
