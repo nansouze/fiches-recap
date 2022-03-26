@@ -141,3 +141,31 @@ p {
 }
 
 ```
+
+## Rôle Opérateur &
+
+```css
+
+nav {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+```
+
+## Importation + Partials
+
+`A mettre dans defaut.scss`
+
+```css
+
+@use 'header';
+
+```
+
+Pour ne pas générer la feuille de style `header.css` dans le dossier `assets/css`, on va utiliser les partials. On va ajouter un underscore devant le nom du fichier: `_header.scss`.
