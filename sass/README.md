@@ -168,4 +168,5 @@ nav {
 
 ```
 
-Pour ne pas générer la feuille de style `header.css` dans le dossier `assets/css`, on va utiliser les partials. On va ajouter un underscore devant le nom du fichier: `_header.scss`.
+⚠️ **WARNING**
+> Pour ne pas générer la feuille de style `header.css` dans le dossier `assets/css`, on va utiliser les partials (feuilles de styles dédiées à être intégrées dans d'autres feuilles de style). On va ajouter un underscore devant le nom du fichier: `_header.scss`. 
