@@ -7,10 +7,11 @@ Des fiches récapitulatives, classées par thèmes.
 - [Html](html/README.md)
 - [Css](css/README.md)
 - Javascript
+- PHP
+- SQL
 - [Réseau](reseau/README.md)
 - Node
 - Algo
-- SQL
 - Python
 
 ## TOOLS
