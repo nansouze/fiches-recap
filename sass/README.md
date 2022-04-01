@@ -170,6 +170,10 @@ nav {
 ⚠️ **WARNING**
 > Pour ne pas générer la feuille de style `header.css` dans le dossier `assets/css`, on va utiliser les partials (feuilles de styles dédiées à être intégrées dans d'autres feuilles de style). On va ajouter un underscore devant le nom du fichier: `_header.scss`.
 
+<p align="center">
+  <img src='assets/img/Sass_Partials.png'  width='20%'>
+</p>
+
 ## Regrouper toutes les variables
 
 On va mettre toutes variables dasn un partial `_variables.scss`
