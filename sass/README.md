@@ -168,4 +168,21 @@ nav {
 ```
 
 ⚠️ **WARNING**
-> Pour ne pas générer la feuille de style `header.css` dans le dossier `assets/css`, on va utiliser les partials (feuilles de styles dédiées à être intégrées dans d'autres feuilles de style). On va ajouter un underscore devant le nom du fichier: `_header.scss`. 
+> Pour ne pas générer la feuille de style `header.css` dans le dossier `assets/css`, on va utiliser les partials (feuilles de styles dédiées à être intégrées dans d'autres feuilles de style). On va ajouter un underscore devant le nom du fichier: `_header.scss`.
+
+## Regrouper toutes les variables
+
+On va mettre toutes variables dasn un partial `_variables.scss`
+
+```css
+
+/* A mettre dans defaut.scss */ 
+@use 'header';
+
+@import 'variables';
+
+```
+
+⚠️ **WARNING**
+> Il faut d'abord utiliser `@use` avant d'utiliser `@import`. 
+
