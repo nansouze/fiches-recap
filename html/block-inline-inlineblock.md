@@ -12,7 +12,7 @@ Les éléments en lignes n'occupent que l'espace entre leurs balises et s'insèr
 
 Des éléments qui se mettent les uns à côté des autres et qui sont redimensionnables.
 
-### ⚠️ WARNING
+⚠️ **WARNING**
 > A chaque `inline-block` que l'on utilise, il y a un petit espace blanc (environ 4px) qui se créee. le seul moyen c'est de mettre les balises côte à cote (aucun trou).
 
 <p align="center">
