@@ -160,10 +160,9 @@ nav {
 
 ## Importation + Partials
 
-`A mettre dans defaut.scss`
-
 ```css
 
+/* A mettre dans defaut.scss */ 
 @use 'header';
 
 ```
