@@ -176,7 +176,7 @@ nav {
 
 ## Regrouper toutes les variables
 
-On va mettre toutes variables dasn un partial `_variables.scss`
+On va mettre toutes variables dans un partial `_variables.scss`
 
 ```css
 
@@ -188,5 +188,106 @@ On va mettre toutes variables dasn un partial `_variables.scss`
 ```
 
 ⚠️ **WARNING**
-> Il faut d'abord utiliser `@use` avant d'utiliser `@import`. 
+> Il faut d'abord utiliser `@use` avant d'utiliser `@import`.
 
+## Héritage
+
+On va faire hériter la classe `.message` à  `.succes` & `.erreur`
+
+```css
+
+/* message */ 
+.message {
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* succés */ 
+.succes {
+    @extend .message;
+    background-color: green;
+}
+
+/* erreur */ 
+.erreur {
+    @extend .message;
+    background-color: red;
+}
+
+```
+
+## Mixins
+
+On va pouvoir par exemple en plus de l'héritage, jouer sur un paramètre. Ex `$couleur`
+
+```css
+
+/* MIXINS */ 
+@mixin message($couleur: white) {
+    color: $couleur;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* succés */ 
+.succes {
+    @include message();
+    background-color: green;
+}
+
+/* erreur */ 
+.erreur {
+    @include message();
+    background-color: red;
+}
+
+/* notification */ 
+.erreur {
+    @include message(black);
+    background-color: #f3f3f3;
+}
+
+```
+
+⚠️ **WARNING**
+> On peut utiliser les mixins pour afficher les valeurs pour les anciens navigateurs. Si on veut imbriquer des mixins dans des mixins, il faut faire attention à l'ordre. (ex: border-radius avant message.
+
+```css
+
+/* MIXINS */ 
+@mixin border-radius($radiusA, $radiusB) {
+    -webkit-border-radius: $radiusA $radiusB;
+    -moz-border-radius: $radiusA $radiusB;
+    -ms-border-radius: $radiusA $radiusB;
+    border-radius: $radiusA $radiusB;
+}
+
+@mixin message($couleur: white) {
+    color: $couleur;
+    @include border-radius(5px, 5px);
+    padding: 10px;
+    margin: 5px;
+}
+
+/* succés */ 
+.succes {
+    @include message();
+    background-color: green;
+}
+
+/* erreur */ 
+.erreur {
+    @include message();
+    background-color: red;
+}
+
+/* notification */ 
+.erreur {
+    @include message(black);
+    background-color: #f3f3f3;
+}
+
+```
