@@ -253,21 +253,21 @@ On va pouvoir par exemple en plus de l'héritage, jouer sur un paramètre. Ex `$
 ```
 
 ⚠️ **WARNING**
-> On peut utiliser les mixins pour afficher les valeurs pour les anciens navigateurs. Si on veut imbriquer des mixins dans des mixins, il faut faire attention à l'ordre. (ex: border-radius avant message.
+> On peut utiliser les mixins pour afficher les valeurs pour les anciens navigateurs. Si on veut imbriquer des mixins dans des mixins, il faut faire attention à l'ordre. (ex: border-radius avant message).
 
 ```css
 
 /* MIXINS */ 
-@mixin border-radius($radiusA, $radiusB) {
-    -webkit-border-radius: $radiusA $radiusB;
-    -moz-border-radius: $radiusA $radiusB;
-    -ms-border-radius: $radiusA $radiusB;
-    border-radius: $radiusA $radiusB;
+@mixin border-radius($radius...) { /* Spread operator -> arguments variables */  
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radiusA $radius;
 }
 
 @mixin message($couleur: white) {
     color: $couleur;
-    @include border-radius(5px, 5px);
+    @include border-radius(5px 10px 5px 10px);
     padding: 10px;
     margin: 5px;
 }
