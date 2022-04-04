@@ -291,3 +291,28 @@ On va pouvoir par exemple en plus de l'héritage, jouer sur un paramètre. Ex `$
 }
 
 ```
+
+⚠️ **WARNING**
+> On peut utiliser les mixins pour utiliser au mieux [Google Fonts](https://fonts.google.com/).
+
+```css
+
+/* MIXINS */
+@mixin googleFonts($nom) {  
+    @import url('https://fonts.googleapis.com/css2?family=' + $nom + '&display=swap');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); */
+@include googleFonts('Roboto:wght@300;400;700');
+@include googleFonts('Poppins');
+@include googleFonts('Open+Sans');
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Poppins';
+    font-weight: 700;
+}
+
+```
+
+
