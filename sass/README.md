@@ -452,3 +452,41 @@ $font-size: 12;
 }
 
 ```
+
+## Astuces
+
+### Listes
+
+```css
+
+$noms: "mark", "bill", "steve", "anna";
+
+@each $nom in $noms {
+
+    .avatar-#{$nom} {
+        background-image: url('../../images/avatars/#{$nom}.png') no-repeat;
+    }
+
+}
+
+⚠️ **WARNING**
+> A la différence des `tableaux`, `les listes`, on un index qui commence à 1.
+
+### Fonction nth()
+
+```css
+
+$noms: "mark", "bill", "steve", "anna";
+$nombreActuel: 1;
+
+@each $nom in $noms {
+
+    .avatar-#{$nom} {
+        background-image: url('../../images/avatars/#{$nom}.png') no-repeat;
+        content: nth($noms, $nombreActuel);
+    }
+    
+    $nombreActuel: $nombreActuel + 1;
+}
+
+```
