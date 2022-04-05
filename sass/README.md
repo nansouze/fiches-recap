@@ -353,6 +353,8 @@ html {
 
 ## Conditions & Boucles
 
+### Conditions
+
 ```css
 
 body {
@@ -368,6 +370,53 @@ body {
     } @else {
        color: black;
        background-color: white;
+}
+
+```
+
+### Boucles @for
+
+```css
+
+@for $i from 1 through 20 {
+
+    .colonne-#{$i} {
+        width: 50px*$i;
+    }
+
+}
+
+```
+
+### Boucles @each
+
+```css
+
+@each $nom in compass, part, user, admin, cad, computer {
+
+    .#{$nom}-icone {
+        background-image: url('images/icones/#{$nom}.png');
+    }
+
+}
+
+```
+
+### Boucles @while
+
+```css
+
+/* Création variable i */
+$i: 1;
+
+@while ($i <= 6) {
+
+    .colonne-#{$i} {
+        width: 50px*$i;
+    }
+
+    $i: $i + 1;
+
 }
 
 ```
