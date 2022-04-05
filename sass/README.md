@@ -388,14 +388,30 @@ body {
 
 ```
 
+```css
+
+@for $font-size from 12 through 18 {
+
+    @if ($font-size%2 == 0) {
+
+        .font-size-#{$font-size} {
+            font-size: $font-size * 1px;
+        }
+
+    }
+
+}
+
+```
+
 ### Boucles @each
 
 ```css
 
-@each $nom in compass, part, user, admin, cad, computer {
+@each $nom in mark, bill, steve {
 
-    .#{$nom}-icone {
-        background-image: url('images/icones/#{$nom}.png');
+    .avatar-#{$nom} {
+        background-image: url('../../images/avatars/#{$nom}.png') no-repeat;
     }
 
 }
@@ -416,6 +432,22 @@ $i: 1;
     }
 
     $i: $i + 1;
+
+}
+
+```
+
+```css
+
+$font-size: 12;
+
+@while ($font-size <= 18 ) {
+
+    .font-size-#{$font-size} {
+        font-size: $font-size * 1px;
+    }
+
+    $font-size: $font-size + 2;
 
 }
 
