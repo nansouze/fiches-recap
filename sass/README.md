@@ -315,4 +315,59 @@ html {
 
 ```
 
+## Fonctions
 
+### Fonctions Natives
+
+- lighten (éclaircir une couleur)
+- darken (assombrir une couleur)
+- round (arrondir une valeur)
+
+```css
+
+header {
+    background-color: lighten($couleurPrincipale, 15%);
+}
+
+/* background-color: darken($couleurPrincipale, 15%); */
+/* padding: round(15px / 2); */
+
+```
+
+### Nos Propres Fonctions
+
+```css
+
+/* FONCTIONS */
+
+@function foisQuatre($nombre) {  
+    @return $nombre * 4;
+}
+
+html {
+    font-size: foisQuatre(4px);
+    font-family: 'Open Sans', 'Poppins';
+}
+
+```
+
+## Conditions & Boucles
+
+```css
+
+body {
+    margin: 0;
+    height: calc(100vh - 16px);
+    
+    @if ($theme == 'violet') {
+        color: purple;
+        background-color: white;
+    } @else if ($theme == 'noir') {
+        color: white;
+        background-color: black;
+    } @else {
+       color: black;
+       background-color: white;
+}
+
+```
