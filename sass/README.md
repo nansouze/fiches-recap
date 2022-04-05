@@ -492,3 +492,79 @@ $nombreActuel: 1;
 }
 
 ```
+
+### Ajouter Valeurs Liste Dynamiquement
+
+```css
+
+$noms: "mark", "bill", "steve", "anna";
+$nombreActuel: 1;
+
+$noms: append($noms, "dora", comma); /* space comma auto */
+/* space -> "anna dora" */
+/* comma -> "anna", "dora" */
+/* auto -> analyse déjà la forme de la liste */
+
+@each $nom in $noms {
+
+    .avatar-#{$nom} {
+        background-image: url('../../images/avatars/#{$nom}.png') no-repeat;
+        content: nth($noms, $nombreActuel);
+    }
+    
+    $nombreActuel: $nombreActuel + 1;
+}
+
+```
+
+### @at-root
+
+```css
+
+header {
+    background-color: $couleurPrincipale;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    ul {
+        margin: 0; padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    @at-root {
+        nav {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+```
+
+### Maps
+
+```css
+
+/* VARIABLES */
+$font-weights: ('regular': 400, 'medium': 500, 'bold': 700);
+$font-lights: ('lightest': 100, 'light': 300);
+
+$font-weights: map-merge($font-weights, $font-lights);
+
+```
+
+```css
+
+/* font-weight: map-get($font-weights, 'bold'); */
+font-weight: map-get($font-weights, 'lightest');
+
+```
+
+
