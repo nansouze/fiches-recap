@@ -469,6 +469,8 @@ $noms: "mark", "bill", "steve", "anna";
 
 }
 
+```
+
 ⚠️ **WARNING**
 > A la différence des `tableaux`, `les listes`, on un index qui commence à 1.
 
