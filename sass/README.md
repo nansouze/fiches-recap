@@ -567,4 +567,26 @@ font-weight: map-get($font-weights, 'lightest');
 
 ```
 
+```css
 
+/* VARIABLES */
+$couleurs: (
+    'principale': #8e44ad, 
+    'secondaire': red, 
+    'tertiaire': pink
+);
+
+```
+
+```css
+
+/* Boucler sur le map avec @each */
+@each $cle, $valeur in $couleurs {
+
+    .couleur-#{$cle} {
+        color: #{$valeur};
+    }
+
+}
+
+```
