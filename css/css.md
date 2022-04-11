@@ -1,4 +1,4 @@
-# CSS ?
+# CSS
 
 Le **CSS** ou **C**ascading **S**tyle **S**heets (feuilles de style en cascade) offre la possibilité de styliser des langages de balises comme le HTML. Appliquer des couleurs, définir des marges, positionner des éléments et bien d'autres choses...
 
