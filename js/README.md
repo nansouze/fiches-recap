@@ -38,5 +38,3 @@ window.addEventListener('load', function () {
 
 
 ```
-
-**cette méthode est la voie à suivre**.
