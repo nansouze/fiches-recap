@@ -23,6 +23,7 @@
 | `HTML Snippets` | To get full HTML tags including HTML5 Snippets. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets) |
 | `HTML CSS Support` | To get HTML id and class attribute completion for Visual Studio Code. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) |
 | `JavaScript (ES6) Code Snippets` | To get code snippets for JS in ES6 syntax (supports both JS and TS). | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) |
+| `jQuery Code Snippets` | Over 130 jQuery Code Snippets for JavaScript code. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets) |
 | `Peacock` | To subtly change the color of your Visual Studio Code workspace. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) |
 | `Prettier` | To automatically format code. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
 | `Live Server` | To create a live preview for the current project. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |
