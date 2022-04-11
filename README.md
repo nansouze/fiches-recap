@@ -20,3 +20,4 @@ Des fiches récapitulatives, classées par thèmes.
 - [VIM](vim/README.md)
 - [Terminal](terminal/README.md)
 - [Git & GitHub](git-github/README.md)
+- [NPM](npm/README.md)
