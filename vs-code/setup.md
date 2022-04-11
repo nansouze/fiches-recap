@@ -27,6 +27,7 @@
 | `Peacock` | To subtly change the color of your Visual Studio Code workspace. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) |
 | `Prettier` | To automatically format code. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
 | `Live Server` | To create a live preview for the current project. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |
+| `Live Sass Compiler` | To compile/transpile your SASS/SCSS files to CSS files at realtime with live browser reload. | [Install &rarr;](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) |
 
 
 ### Settings
