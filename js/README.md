@@ -38,3 +38,79 @@ window.addEventListener('load', function () {
 
 
 ```
+
+## Variables
+
+| Convention   | Content     |
+| :----------- | :---------- | 
+| `camelCase`  | myVarName   |
+| `PascalCase` | MyVarName   | 
+| `snake_case` | my_var_name | 
+| `kebab-case` | my-var-name |
+
+```js
+
+// VAR (Globale)
+var user = "John";
+
+// LET (Locale & peut être ré-assignée)
+var prenom = "Julia";
+
+// CONST (Constante & ne peut être ré-assignée)
+const HOURS_IN_DAY = 24;
+
+```
+
+## Types
+
+```js
+
+// NUMBER
+console.log(typeof 42);
+
+// STRING
+console.log(typeof 'blubber');
+
+// BOOLEAN
+console.log(typeof true);
+
+// UNDEFINED
+console.log(typeof undeclaredVariable);
+
+```
+
+## Concaténation
+
+```js
+
+const prenom  = "Nicolas";
+const nom     = "Dupont";
+
+console.log("Bonjour " + prenom + ' ' + nom + ' !');
+
+// Bonjour [prenom] [age] !
+
+```
+
+## Opérateurs
+
+| Caractère    |  Opération     |
+| :----------- | :------------- | 
+| `+`          | Addition       |
+| `-`          | Soustration    | 
+| `*`          | Multiplication | 
+| `/`          | Division       |
+| `%`          | Modulo         |
+| `**`         | Exponentielle  |
+
+```js
+
+let nombreUn = 8, nombreDeux = 4, result;
+result = (nombreUn + nombreDeux) * 9; // 108
+result++; // incrémentation = ajoute 1
+result--; // décrémentation = retire 1
+result += 2; // incrémentation = ajoute 2
+result -= 2; // décrémentation = retire 2
+console.log(result);
+
+```
