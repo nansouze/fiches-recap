@@ -7,7 +7,7 @@ Des fiches récapitulatives, classées par thèmes.
 - [Html](html/README.md)
 - [Css](css/README.md)
 - [Sass](sass/README.md)
-- Javascript
+- [Javascript](js/README.md)
 - PHP
 - SQL
 - [Réseau](reseau/README.md)
