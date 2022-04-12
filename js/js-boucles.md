@@ -27,17 +27,37 @@ while (i < 5) {
 
 ```js
 
+let prenom;
+
 do {
 
-    var prenom = prompt('Quel est votre prénom ?');
+    prenom = prompt('Quel est votre prénom ?');
 
-} while(prenom == "" || prenom == null)
+} while (prenom == "" || prenom == null)
 
 alert('Bonjour ' + prenom);
-
-}
 
 ```
 
 ⚠️ **WARNING**
 > A la différence de la boucle `while`, `do...while` s'éxécute au moins une fois.
+
+
+## For
+
+```js
+
+for (let i = 1; i < 5; i++) {
+    console.log('Ligne : ' + i);
+}
+
+```
+
+⚠️ **WARNING**
+> Ici, la boucle `for` fait la même chose que la boucle `while` au-dessus, mais en 3 lignes.
+
+## For Of (Array)
+
+## For In (Object)
+
+## ForEach
