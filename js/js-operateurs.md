@@ -1,5 +1,8 @@
 # Opérateurs
 
+- [Truthy](https://developer.mozilla.org/fr/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/fr/docs/Glossary/Falsy)
+
 ## Opérateurs Arithmétiques
 
 | Caractère    |  Opération     |
@@ -105,6 +108,3 @@ const baz = 0 ?? 42;
 console.log(baz); // expected output: 0
 
 ```
-
-
-
