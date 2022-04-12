@@ -1,7 +1,5 @@
 # JavaScript
 
-## Topics
-
 - [Introduction](js.md)
 - [Opérateurs]()
 - [Objet Window]()
