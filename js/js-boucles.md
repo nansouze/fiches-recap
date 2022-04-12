@@ -1,42 +1,43 @@
 # Boucles
 
-## If / Else
+## While
 
 ```js
 
-let age = 21;
+let i = 1;
 
-if (age < 18) {
-    console.log("Vous n'êtes pas majeur");
-} else if (age < 21) {
-    console.log("Vous êtes majeur en France");
-} else {
-    console.log("Vous êtes majeur partout, à vous les casinos !");
-}
-
-```
-
-## Switch
-
-```js
-
-let produit = "chocolat";
-
-switch(produit) {
-
-    case "courgette":
-    case "carotte":   
-    case "pomme de terre":
-        console.log('Ceci est un légume');
-        break;
+while (i < 5) {
     
-    case "banane":
-        console.log('Ceci est un fruit');
-        break;
+    console.log('Ligne : ' + i);
+    i++;
 
-    default:
-        console.log('Ceci n\'est ni un fruit ni un légume');
+}
+
+// Ligne : 1
+// Ligne : 2
+// Ligne : 3
+// Ligne : 4
+
+```
+
+⚠️ **WARNING**
+> Attention aux boucles infinies.
+
+## Do While
+
+```js
+
+do {
+
+    var prenom = prompt('Quel est votre prénom ?');
+
+} while(prenom == "" || prenom == null)
+
+alert('Bonjour ' + prenom);
 
 }
 
 ```
+
+⚠️ **WARNING**
+> A la différence de la boucle `while`, `do...while` s'éxécute au moins une fois.
