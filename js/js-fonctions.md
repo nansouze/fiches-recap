@@ -114,3 +114,27 @@ fonctionAnonyme();
 (function(){ console.log('Je suis une fonction anonyme') })(); 
 
 ```
+
+## Fonctions Récursives
+
+Une fonction peut faire référence à elle-même et s'appeler elle-même. [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions#la_r%C3%A9cursivit%C3%A9)
+
+```js
+
+// TIMER
+function timer(secondes) {
+    
+    if (secondes > 0) {
+        console.log(secondes);
+        timer(secondes - 1);
+    }
+    else {
+        console.log(0);
+    }
+
+}
+
+timer(10); // 10 9 8 7 6 5 4 3 2 1 0
+
+```
+
