@@ -6,3 +6,4 @@
 - [Fonctions](js-fonctions.md)
 - [Conditions](js-conditions.md)
 - [Boucles](js-boucles.md)
+- [Exceptions](js-exceptions.md)
