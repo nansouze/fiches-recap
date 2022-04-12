@@ -138,3 +138,19 @@ timer(10); // 10 9 8 7 6 5 4 3 2 1 0
 
 ```
 
+```js
+
+// SOMME
+function somme(nombre) {
+    
+    if(nombre == 1) {
+        return 1;
+    }
+
+    return nombre + somme(nombre - 1);
+
+}
+
+console.log(somme(3)); // 3 + 2 + 1 -> 6
+
+```
