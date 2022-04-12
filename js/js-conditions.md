@@ -1,5 +1,8 @@
 # Conditions
 
+- [Truthy](https://developer.mozilla.org/fr/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/fr/docs/Glossary/Falsy)
+
 ## If / Else
 
 ```js
