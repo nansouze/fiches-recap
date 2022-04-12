@@ -92,6 +92,9 @@ console.log(typeof undeclaredVariable);
 
 ```
 
+⚠️ **WARNING**
+> Faire bien attention à [Truthy](https://developer.mozilla.org/fr/docs/Glossary/Truthy) & [Falsy](https://developer.mozilla.org/fr/docs/Glossary/Falsy).
+
 ## Concaténation
 
 ```js
