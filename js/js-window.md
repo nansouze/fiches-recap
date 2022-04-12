@@ -42,3 +42,8 @@ let answer = `Vous avez donc ${age} ans`;
 alert(answer);
 
 ```
+
+⚠️ **WARNING**
+> Si l'utilisateur, n'ayant pas rempli le champ du formulaire, clique sur le boutton `Annuler` -> `null`, si c'est sur le bouton `OK` -> `chaine de caractère vide`.
+
+
