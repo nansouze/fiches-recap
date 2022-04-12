@@ -64,6 +64,17 @@ true && "chien" // renvoie "chien"
 | `false` | `true`   | `true`            |
 | `false` | `false`  | `false`           |
 
+⚠️ **WARNING**
+> Si la première valeur est [falsy](https://developer.mozilla.org/fr/docs/Glossary/Falsy), l'opérateur `||` renvoie le deuxième opérande.
+
+```js
+
+false || "chien" // renvoie "chien"
+
+null || "chien" // renvoie "chien"
+
+```
+
 `!C1` (NON logique)
 | C1      | Résultat          |
 | :------ | :---------------- |
