@@ -48,7 +48,7 @@ window.addEventListener('load', function () {
 var user = "John";
 
 // LET (Locale & peut être ré-assignée)
-var prenom = "Julia";
+let prenom = "Julia";
 
 // CONST (Constante & ne peut être ré-assignée)
 const HOURS_IN_DAY = 24;
