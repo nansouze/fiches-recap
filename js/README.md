@@ -294,3 +294,97 @@ fonctionAnonyme();
 (function(){ console.log('Je suis une fonction anonyme') })(); 
 
 ```
+
+## Conditions
+
+### Opérateurs Comparaison
+
+| Signe        |  Définition                       |
+| :----------- | :-------------------------------- | 
+| `==`         | Egal à la valeur                  |
+| `===`        | Egal à la valeur et au type       | 
+| `!=`         | Différent de la valeur            | 
+| `!==`        | Différent de la valeur et du type |
+| `>`          | Supérieur                         |
+| `<`          | Inférieur                         |
+| `>=`         | Supérieur ou égal                 |
+| `<=`         | Inférieur ou égal                 |
+
+### Opérateurs Logiques
+
+`C1 && C2` (ET logique)
+| C1      | C2       | Résultat          |
+| :------ | :------- | :---------------- |
+| `true`  | `true`   | `true`            |
+| `true`  | `false`  | `false`           |
+| `false` | `true`   | `false`           |
+| `false` | `false`  | `false`           |
+
+⚠️ **WARNING**
+> Si la première valeur est [truthy](https://developer.mozilla.org/fr/docs/Glossary/Truthy), l'opérateur `&&` renvoie le deuxième opérande.
+
+```js
+
+true && "chien" // renvoie "chien"
+
+[] && "chien" // renvoie "chien"
+
+```
+
+`C1 || C2` (OU logique)
+| C1      | C2       | Résultat          |
+| :------ | :------- | :---------------- |
+| `true`  | `true`   | `true`            |
+| `true`  | `false`  | `true`            |
+| `false` | `true`   | `true`            |
+| `false` | `false`  | `false`           |
+
+`!C1` (NON logique)
+| C1      | Résultat          |
+| :------ | :---------------- |
+| `true`  | `false`           |
+| `false` | `true`            |
+
+- [Truthy](https://developer.mozilla.org/fr/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/fr/docs/Glossary/Falsy)
+
+### If / Else
+
+```js
+
+let age = 21;
+
+if (age < 18) {
+    console.log("Vous n'êtes pas majeur");
+} else if (age < 21) {
+    console.log("Vous êtes majeur en France");
+} else {
+    console.log("Vous êtes majeur partout, à vous les casinos !");
+}
+
+```
+
+### Switch
+
+```js
+
+let produit = "chocolat";
+
+switch(produit) {
+
+    case "courgette":
+    case "carotte":   
+    case "pomme de terre":
+        console.log('Ceci est un légume');
+        break;
+    
+    case "banane":
+        console.log('Ceci est un fruit');
+        break;
+
+    default:
+        console.log('Ceci n\'est ni un fruit ni un légume');
+
+}
+
+```
