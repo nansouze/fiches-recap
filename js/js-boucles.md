@@ -107,4 +107,16 @@ for (const element of array1) {
 
 ```
 
-## ForEach
+## ForEach [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+```js
+
+const listeDePays = ['France', 'Belgique', 'Japon', 'Maroc'];
+
+listeDePays.forEach(function(pays){
+    console.log(pays);
+});
+
+listeDePays.forEach(pays => console.log(pays));
+
+```
