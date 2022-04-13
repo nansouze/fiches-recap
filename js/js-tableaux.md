@@ -146,6 +146,25 @@ monTableau2D[0].join(' / ') // Mark / Jeff / Bill
 ⚠️ **WARNING**
 > ne marche que pour les tableaux simples & plusieurs dimensions. Pour les tableaux associatifs, il faudra utiliser une boucle spéciale.
 
+```js
+
+// Tableaux Associatifs
+let monTableauAssociatif = {
+    'prenom' : 'Mark',
+    'nom'    : 'Zuckerberg',
+    'poste'  : 'PDG de Facebook'
+};
+
+function concatener(arrayAsso) {
+    for (const property in arrayAsso) {
+        console.log(`${property}: ${arrayAsso[property]}`);
+      }
+}
+
+concatener(monTableauAssociatif);
+
+```
+
 ## La Fonction Ultime
 
 ### Splice
