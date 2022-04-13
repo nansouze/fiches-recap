@@ -171,6 +171,12 @@ concatener(monTableauAssociatif);
 
 ```js
 
+// splice([début], [nbASupprimer], [élément(s)]) : retire, remplace ou ajoute des éléments.
+
+// Début : l'index à partir duquel commencer le changement, si négatif, part de la fin du tableau
+// nbASupprimer : un entier indiquant le nombre d'éléments à retirer ou remplacer
+// Element(s) : les éléments à ajouter à partir du début précisé. Si aucun élément n'est spécifié, alors n'en ajoutera pas.
+
 // Simple
 monTableau.splice(1, 0, 'random', 'pie'); // Attention à l'index pour l'insert
 
