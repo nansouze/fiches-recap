@@ -74,8 +74,37 @@ console.log(text); // expected output: "012456789"
 ⚠️ **WARNING**
 > l'instruction `continue` arrête l'exécution des instructions pour l'itération de la boucle courante ou de la boucle étiquetée. <br> L'exécution est reprise à l'itération suivante.
 
-## For Of (Array)
 
-## For In (Object)
+## For In (Object) [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/for...in)
+
+```js
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+// "a: 1"
+// "b: 2"
+// "c: 3"
+
+```
+
+## For Of (Array) [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/for...of)
+
+```js
+
+const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+// "a"
+// "b"
+// "c"
+
+```
 
 ## ForEach
