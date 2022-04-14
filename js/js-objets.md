@@ -61,3 +61,71 @@ monSet.delete(87);
 console.log(monSet.size);
 
 ```
+
+## Objet Map [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+```js
+
+let utilisateurs = new Map();
+
+utilisateurs.set('Mark Zuckerberg', {
+    email: 'mark@facebook.com',
+    poste: 'PDG',
+});
+
+utilisateurs.set('Bill Gates', {
+    email: 'bill@gatesnotes.com',
+    poste: 'Sauver le monde',
+});
+
+// utilisateurs.delete('Bill Gates');
+
+console.log(utilisateurs);
+
+```
+
+## Objet WeakSet [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+
+```js
+
+let voitureA = {
+  constructeur: 'Tesla',
+  modele: 'Cybertruck'
+}
+let voitureB = {
+  constructeur: 'Renault',
+  modele: 'Espace'
+}
+
+let voitures = new WeakSet([voitureA, voitureB]);
+console.log(voitures);
+
+```
+
+## Objet WeakMap [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+
+```js
+
+let voitures = new WeakMap();
+
+let index = {
+    id: 1
+}
+
+let voitureA = {
+    constructeur: 'Tesla',
+    modele: 'Cybertruck'
+}
+
+voitures.set(index, voitureA);
+
+// voitures.delete(index);
+console.log(voitures);
+
+```
+
+⚠️ **WARNING**
+> voici 2 fiches pour bien comprendre [lien 1](https://believemy.com/course/le-programme-rocket/62/4) & [lien 2](https://believemy.com/course/le-programme-rocket/62/9).
+
+
+
