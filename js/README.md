@@ -8,3 +8,4 @@
 - [Boucles](js-boucles.md)
 - [Exceptions](js-exceptions.md)
 - [Tableaux](js-tableaux.md)
+- [Objets](js-objets.md)
