@@ -34,6 +34,9 @@ function resize() {
 
 ```
 
+⚠️ **WARNING**
+> Comme l'objet `window` est un objet global (à la base de tout), il n'est pas nécessaire de le taper à chaque fois.
+
 ### Boite de dialogue Alert
 
 ```js
