@@ -17,7 +17,7 @@ console.log(aliments); // ['chocolat', 'sucre', 'lait', 'fraise', 'banane', 'poi
 
 ```js
 
-let total = aliments.concat(fruits);
+let total = aliments.concat(fruits); // ['chocolat', 'sucre', 'lait', 'fraise', 'banane', 'poire']
 
 ```
 
