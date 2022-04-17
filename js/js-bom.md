@@ -14,7 +14,7 @@ window.open('https://believemy.com');
 
 ```js
 
-let fenetre = window.open('https://believemy.com', '', 'width=900, height=700');
+let fenetre = window.open('https://believemy.com', '', 'width=900, height=700'); // '' -> _self, _blank, _parent, _top
 
 function resize() {
     fenetre.resizeTo(700, 470);
@@ -39,7 +39,7 @@ function resize() {
 ```js
 
 // ALERT -> Afficher une information
-window.alert('Hello World !');
+alert('Hello World !');
 
 ```
 
@@ -48,16 +48,16 @@ window.alert('Hello World !');
 ```js
 
 // CONFIRM -> Demander une confirmation
-window.confirm('Souhaitez-vous confirmer ?')
+confirm('Souhaitez-vous confirmer ?')
 
 // CONFIRM -> Avec une condition
-if(window.confirm('Souhaitez-vous confirmer ?')) {
+if(confirm('Souhaitez-vous confirmer ?')) {
   // Oui
-  window.alert('Ok');
+  alert('Ok');
 }
 else {
   // Non
-  window.alert('Annulation');
+  alert('Annulation');
 }
 
 ```
@@ -67,11 +67,11 @@ else {
 ```js
 
 // PROMPT -> Demander des renseignements
-const age = window.prompt("Entrez votre age:");
+const age = prompt("Entrez votre age:");
 
 let answer = `Vous avez donc ${age} ans`;
 
-window.alert(answer);
+alert(answer);
 
 ```
 
@@ -84,9 +84,9 @@ window.alert(answer);
 
 ```js
 
-navigator.cookieEnabled // true
-navigator.platform // MacIntel
-navigator.language // fr-FR
+navigator.cookieEnabled; // true
+navigator.platform; // MacIntel
+navigator.language; // fr-FR
 
 ```
 
@@ -126,3 +126,14 @@ location.href();
 
 ```
 
+## Screen [MDN](https://developer.mozilla.org/fr/docs/Web/API/Window/screen)
+
+### Informations principales
+
+```js
+
+screen.availWidth; // 1680px
+screen.availHeight; // 1050px
+screen.pixelDepth; // 30
+
+```
