@@ -10,3 +10,4 @@
 - [Objets](js-objets.md)
 - [Rest Parameter](js-rest-parameter.md)
 - [BOM](js-bom.md)
+- [DOM](js-dom.md)
