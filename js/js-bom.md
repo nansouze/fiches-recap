@@ -78,4 +78,37 @@ window.alert(answer);
 ⚠️ **WARNING**
 > Si l'utilisateur, n'ayant pas rempli le champ du formulaire, clique sur le boutton `Annuler` -> `null`, si c'est sur le bouton `OK` -> `chaine de caractère vide`.
 
+## Navigator [MDN](https://developer.mozilla.org/fr/docs/Web/API/Navigator)
+
+### Informations principales
+
+```js
+
+navigator.cookieEnabled // true
+navigator.platform // MacIntel
+navigator.language // fr-FR
+
+```
+
+## History [MDN](https://developer.mozilla.org/fr/docs/Web/API/History)
+
+### Page précédente
+
+```js
+
+history.back();
+
+```
+
+### Page suivante (si existante)
+
+```js
+
+history.forward();
+
+```
+
+
+
+
 
