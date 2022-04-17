@@ -16,6 +16,4 @@ function addition(...nombres) {
 
 addition(4, 9, 5, 415, 78, 54, 5);
 
-addition(4, 9, 5, 415, 78, 54, 5);
-
 ```
