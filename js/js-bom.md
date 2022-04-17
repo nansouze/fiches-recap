@@ -33,3 +33,49 @@ function resize() {
 }
 
 ```
+
+### Boite de dialogue Alert
+
+```js
+
+// ALERT -> Afficher une information
+window.alert('Hello World !');
+
+```
+
+### Boite de dialogue Confirm
+
+```js
+
+// CONFIRM -> Demander une confirmation
+window.confirm('Souhaitez-vous confirmer ?')
+
+// CONFIRM -> Avec une condition
+if(window.confirm('Souhaitez-vous confirmer ?')) {
+  // Oui
+  window.alert('Ok');
+}
+else {
+  // Non
+  window.alert('Annulation');
+}
+
+```
+
+### Boite de dialogue Prompt
+
+```js
+
+// PROMPT -> Demander des renseignements
+const age = window.prompt("Entrez votre age:");
+
+let answer = `Vous avez donc ${age} ans`;
+
+window.alert(answer);
+
+```
+
+⚠️ **WARNING**
+> Si l'utilisateur, n'ayant pas rempli le champ du formulaire, clique sur le boutton `Annuler` -> `null`, si c'est sur le bouton `OK` -> `chaine de caractère vide`.
+
+
