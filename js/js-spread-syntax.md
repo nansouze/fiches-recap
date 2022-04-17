@@ -31,3 +31,22 @@ let phraseTableau = [...phrase];
 console.log(phraseTableau); // ['B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!']
 
 ```
+
+## Sélectionner un élément, et stocker les autres dans une variable
+
+```js
+
+let devises = ['dollars', 'euro', 'yen'];
+
+// Sans décomposition
+// let premiereDevise = devises[0];
+// let autres = [devises[1], devises[2]];
+
+// Avec décomposition
+let [premiereDevise, ...autres] = devises;
+
+console.log(premiereDevise); // dollars
+console.log(autres); // ['euro', 'yen']
+
+
+```
