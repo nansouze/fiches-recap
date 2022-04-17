@@ -1,8 +1,9 @@
 # Spread Syntax [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
+## Fusionner plusieurs tableaux
+
 ```js
 
-// Exemple 1 : fusionner plusieurs tableaux
 let fruits = ['fraise', 'banane', 'poire'];
 let aliments = ['chocolat', 'sucre', 'lait', ...fruits];
 
@@ -17,5 +18,16 @@ console.log(aliments); // ['chocolat', 'sucre', 'lait', 'fraise', 'banane', 'poi
 ```js
 
 let total = aliments.concat(fruits);
+
+```
+
+## Découper une chaîne de caractères en plusieurs éléments
+
+```js
+
+let phrase = "Bonjour !";
+let phraseTableau = [...phrase];
+
+console.log(phraseTableau); // ['B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!']
 
 ```
