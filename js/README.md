@@ -9,3 +9,4 @@
 - [Exceptions](js-exceptions.md)
 - [Tableaux](js-tableaux.md)
 - [Objets](js-objets.md)
+- [Rest Parameter](js-rest-parameter.md)
