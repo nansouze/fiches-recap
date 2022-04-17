@@ -108,7 +108,21 @@ history.forward();
 
 ```
 
+## Location [MDN](https://developer.mozilla.org/fr/docs/Web/API/Location)
 
+### Recharger une page
 
+```js
 
+location .reload();
+
+```
+
+### Rediriger
+
+```js
+
+location.href();
+
+```
 
