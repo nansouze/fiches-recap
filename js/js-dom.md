@@ -146,3 +146,31 @@ document.querySelector('.container').prepend(helloWorld); (avant)
 document.querySelector('h1').remove();
 
 ```
+
+## Modifier le style des éléments
+
+### 1ere méthode (décomposée)
+
+```js
+
+let header = document.querySelector('header');
+header.style.backgroundColor = '#ffbd69';
+
+```
+
+### 2e méthode (directe)
+
+```js
+
+document.querySelector('h1').style.color = '#111d5e';
+document.querySelector('h1').style.textAlign = 'center';
+
+```
+
+### 3e méthode (avec une classe)
+
+```js
+
+document.querySelector('header').className = "ma_class";
+
+```
