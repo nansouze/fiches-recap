@@ -7,6 +7,7 @@
 ```js
 
 let header = document.getElementsByTagName('header');
+// let header = document.getElementsByTagName('header')[0];
 
 console.log(header); // HTMLCollection(1)
 
@@ -56,3 +57,26 @@ let p = document.querySelectorAll('p');
 console.log(p); // NodeList(2)
 
 ```
+
+## Modifier les éléments du DOM (propriétées)
+
+### textContent [MDN](https://developer.mozilla.org/fr/docs/Web/API/Node/textContent)
+
+```js
+
+let h1 = document.querySelector('h1');
+h1.textContent = "Hello World !";
+
+```
+
+### innerHTML [MDN](https://developer.mozilla.org/fr/docs/Web/API/Element/innerHTML)
+
+```js
+
+let h1 = document.querySelector('h1');
+h1.innerHTML = "<div style='font-weight: normal'>Hello World !</div>";
+
+```
+
+⚠️ **WARNING**
+> Pour en savoir plus, voici toutes [les propriétés existantes](https://developer.mozilla.org/fr/docs/Web/API/Element).
