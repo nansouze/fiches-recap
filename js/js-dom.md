@@ -37,10 +37,14 @@ console.log(container); // HTMLCollection(1)
 ```js
 
 let h1 = document.querySelector('h1');
+// let container = document.querySelector('.container');
 
-console.log(h1); // <h1>Bienvenue sur mon site</h1>
+console.log(h1); // <h1>Bienvenue sur mon site !</h1>
 
 ```
+
+⚠️ **WARNING**
+> On peut utiliser `tagName`, `#idName`, `.className`.
 
 
 ### querySelectorAll [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelectorAll)
