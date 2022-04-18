@@ -47,6 +47,16 @@ console.log(h1); // <h1>Bienvenue sur mon site !</h1>
 ⚠️ **WARNING**
 > On peut utiliser `tagName`, `#idName`, `.className`.
 
+```js
+
+// let body = document.querySelector('body');
+document.body
+
+```
+
+⚠️ **WARNING**
+> Pas besoin de selectionner `body`.
+
 
 ### querySelectorAll [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelectorAll)
 
@@ -80,3 +90,59 @@ h1.innerHTML = "<div style='font-weight: normal'>Hello World !</div>";
 
 ⚠️ **WARNING**
 > Pour en savoir plus, voici toutes [les propriétés existantes](https://developer.mozilla.org/fr/docs/Web/API/Element).
+
+## Ajouter des éléments au DOM
+
+### 1ere méthode (texte)
+
+```js
+
+// Ecrit juste un texte à la suite de votre contenu
+document.write('test');
+
+```
+
+### 2e méthode (élément brut)
+
+```js
+
+// Ajouter un élément brut -> chaine de caractère
+// On peut choisir ou ajouter l'objet
+let h1 = document.querySelector('h1');
+h1.append('test');
+
+```
+
+### 3e méthode (objet)
+
+```js
+
+// Créer un élément
+let helloWorld = document.createElement('div');
+
+// Le personnaliser
+helloWorld.textContent = "Hello World !";
+
+// L'ajouter à notre page
+// document.body.append(helloWorld); (après)
+// document.body.appendChild(helloWorld); (après)
+// append VS appendChild -> on ne peut pas passer du texte dans appendChild, obligatoirement un objet
+
+// document.body.insertBefore(helloWorld, document.querySelector('.container')); (avant)
+
+document.querySelector('.container').prepend(helloWorld); (avant)
+
+```
+
+## Supprimer des éléments du DOM
+
+### Remove
+
+```js
+
+// let h1 = document.querySelector('h1');
+// h1.remove();
+
+document.querySelector('h1').remove();
+
+```
