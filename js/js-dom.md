@@ -1,79 +1,54 @@
 # DOM (Document Object Model) [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document_Object_Model)
 
-## Window [MDN](https://developer.mozilla.org/fr/docs/Web/API/Window)
+## Accéder aux éléments du DOM
 
-### Ouvrir une fenêtre
-
-```js
-
-window.open('https://believemy.com');
-
-```
-
-### Redimensionner une fenêtre
+### getElementsByTagName [MDN](https://developer.mozilla.org/fr/docs/Web/API/Element/getElementsByTagName)
 
 ```js
 
-let fenetre = window.open('https://believemy.com', '', 'width=900, height=700'); // '' -> _self, _blank, _parent, _top
+let header = document.getElementsByTagName('header');
 
-function resize() {
-    fenetre.resizeTo(700, 470);
-}
+console.log(header); // HTMLCollection(1)
 
 ```
 
-### Fermer une fenêtre
+### getElementById [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById)
 
 ```js
 
-let fenetre = window.open('https://believemy.com', '', 'width=900, height=700');
+let logo = document.getElementById('logo');
 
-function resize() {
-    fenetre.close();
-}
+console.log(logo); // <div id="logo">...</div>
 
 ```
 
-### Boite de dialogue Alert
+### getElementsByClassName [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/getElementsByClassName)
 
 ```js
 
-// ALERT -> Afficher une information
-alert('Hello World !');
+let container = document.getElementsByClassName('container');
+
+console.log(container); // HTMLCollection(1)
 
 ```
 
-### Boite de dialogue Confirm
+### querySelector [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector)
 
 ```js
 
-// CONFIRM -> Demander une confirmation
-confirm('Souhaitez-vous confirmer ?')
+let h1 = document.querySelector('h1');
 
-// CONFIRM -> Avec une condition
-if(confirm('Souhaitez-vous confirmer ?')) {
-  // Oui
-  alert('Ok');
-}
-else {
-  // Non
-  alert('Annulation');
-}
+console.log(h1); // <h1>Bienvenue sur mon site</h1>
 
 ```
 
-### Boite de dialogue Prompt
+
+### querySelectorAll [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelectorAll)
 
 ```js
 
-// PROMPT -> Demander des renseignements
-const age = prompt("Entrez votre age:");
+let p = document.querySelectorAll('p');
 
-let answer = `Vous avez donc ${age} ans`;
-
-alert(answer);
+console.log(p); // NodeList(2)
 
 ```
-
-⚠️ **WARNING**
-> Si l'utilisateur, n'ayant pas rempli le champ du formulaire, clique sur le boutton `Annuler` -> `null`, si c'est sur le bouton `OK` -> `chaine de caractère vide`.
