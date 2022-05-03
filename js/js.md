@@ -69,8 +69,8 @@ function crieDeGuerre() {
   
 }
 
-crieDeGuerre();
-console.log(crie);
+crieDeGuerre(); // Toujours plus fort !
+console.log(crie); // Toujours plus bas !
 
 ```
 
