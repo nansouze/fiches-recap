@@ -1,13 +1,20 @@
 # Evénements [MDN](https://developer.mozilla.org/fr/docs/Web/Events)
 
-## Fusionner plusieurs tableaux
+## Ecouter
 
-```js
+### Méthode 1: on... (ancien)
 
-let fruits = ['fraise', 'banane', 'poire'];
-let aliments = ['chocolat', 'sucre', 'lait', ...fruits];
+```html
 
-console.log(aliments); // ['chocolat', 'sucre', 'lait', 'fraise', 'banane', 'poire']
+// Au click on déclenche une popup
+<a onclick="return confirm('Etes-vous sûr de vouloir supprimer cet article ?')" 
+   href="https://believemy.com">Supprimer cet article
+</a>
+
+// Au passage sur le bouton, la couleur de fond change
+<button onmouseover="document.body.style.backgroundColor='orange'" 
+        onmouseout="document.body.style.backgroundColor='white'">Passez au-dessus de moi
+</button>
 
 ```
 
