@@ -134,7 +134,13 @@ document.querySelector('.container').prepend(helloWorld); (avant)
 ```
 
 ⚠️ **WARNING**
-> On peut enchainer les éléments `document.body.append(header, menu, p);`.
+> On peut enchainer les éléments.
+
+```js
+
+document.body.append(header, menu, p);
+
+```
 
 ## Supprimer des éléments du DOM
 
