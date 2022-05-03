@@ -2,7 +2,7 @@
 
 ## Ecouter
 
-### Méthode 1: on... (ancien)
+### Méthode 1: on...
 
 ```html
 
@@ -19,41 +19,85 @@
 ```
 
 ⚠️ **WARNING**
-> On peut aussi utiliser la fonction `concat` pour fusionner les tableaux.
+> Cette méthode est vraiment ancienne.
 
+### Méthode 2: propriétés JS
 
-```js
+```html
 
-let total = aliments.concat(fruits); // ['chocolat', 'sucre', 'lait', 'fraise', 'banane', 'poire']
+<a href="#">Supprimer cet article</a>
 
-```
-
-## Découper une chaîne de caractères en plusieurs éléments
-
-```js
-
-let phrase = "Bonjour !";
-let phraseTableau = [...phrase];
-
-console.log(phraseTableau); // ['B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!']
+<button>Passez au-dessus de moi</button>
 
 ```
 
-## Sélectionner un élément, et stocker les autres dans une variable
+```js
+
+let a = document.querySelector('a');
+let button = document.querySelector('button');
+
+// a.onclick = function(){
+//   if(confirm('Etes-vous sûr ?')) {
+//     location.href="https://believemy.com"
+//   }
+// }
+
+a.onclick = () => {
+  if(confirm('Etes-vous sûr ?')) {
+    location.href="https://believemy.com"
+  }
+}
+
+button.onmouseover = () => {
+  document.body.style.backgroundColor = 'orange';
+}
+
+button.onmouseout = () => {
+  document.body.style.backgroundColor = 'white';
+}
+
+```
+
+### Méthode 3: gestionnaire d'évènements
+
+```html
+
+<a href="#">Supprimer cet article</a>
+
+<button>Passez au-dessus de moi</button>
+
+```
 
 ```js
 
-let devises = ['dollars', 'euro', 'yen'];
+let a = document.querySelector('a');
+let button = document.querySelector('button');
 
-// Sans décomposition
-// let premiereDevise = devises[0];
-// let autres = [devises[1], devises[2]];
+// on peut faire un console.log(e) pour avoir plus d'info
+a.addEventListener('click', (e) => {
+  if(confirm('Etes-vous sûr ?')) {
+    location.href = "https://believemy.com";
+  }
+});
 
-// Avec décomposition
-let [premiereDevise, ...autres] = devises;
+button.addEventListener('mouseover', () => {
+  document.body.style.backgroundColor = 'orange';
+});
 
-console.log(premiereDevise); // dollars
-console.log(autres); // ['euro', 'yen']
+function backgroundWhite() {
+  document.body.style.backgroundColor = 'white';
+}
 
+button.addEventListener('mouseout', backgroundWhite);
+button.addEventListener('mouseout', () => {
+  document.body.style.fontFamily = 'arial';
+});
+
+// on peut remove un evt
+button.removeEventListener('mouseout', backgroundWhite);
 
 ```
+
+⚠️ **WARNING**
+> Cette méthode est la plus flexible car elle utilise le gestionnaire d'évènements.
+
