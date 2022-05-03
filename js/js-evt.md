@@ -21,7 +21,7 @@
 ⚠️ **WARNING**
 > Cette méthode est vraiment ancienne.
 
-### Méthode 2: propriétés JS
+### Méthode 2: propriétés JavaScript
 
 ```html
 
@@ -101,3 +101,69 @@ button.removeEventListener('mouseout', backgroundWhite);
 ⚠️ **WARNING**
 > Cette méthode est la plus flexible car elle utilise le gestionnaire d'évènements.
 
+
+## Gérer la propagation des évènements et stopPropagation
+
+```html
+
+<article style="background-color: silver">
+  <h1 style="display: inline">Titre de l'article</h1>
+</article>
+
+```
+
+```js
+
+let article = document.querySelector('article');
+let h1      = document.querySelector('h1');
+
+article.addEventListener('click', () => {
+  alert('article cliqué');
+});
+
+h1.addEventListener('click', (e) => {
+  alert('titre cliqué');
+  e.stopPropagation(); // On stop la propagation
+});
+
+```
+
+⚠️ **WARNING**
+> On utilise ``stopPropagation` sur évènement pour éviter les 2 popups.
+
+## Planifier l'éxécution d'un script (setTimeout, setInterval)
+
+```js
+
+// setTimeout
+let timer = setTimeout("alert('Bonjour')", 3000);
+clearTimeout(timer);
+
+// setInterval
+let interval = setInterval("alert('Bonjour')", 5000);
+clearInterval(interval);
+
+```
+
+## Principaux évènements
+
+### Les écouteurs "on" et les propriétés JavaScript
+
+| Evènement    | Action                                                              |
+| :----------- | :------------------------------------------------------------------ | 
+| `onfocus`    | Quand l'utilisateur sélectionne l'élément                           |
+| `onchange`   | Quand l'utilisateur change la valeur de l'élément                   |
+| `onclick`    | Quand l'utilisateur clique sur l'élément                            |
+| `ondblclick` | Quand l'utilisateur double-clique sur l'élément                     |
+| `onkeypress` | Quand l'utilisateur appuie sur une touche du clavier dans l'élément |
+
+### Les évènements avec addEventListener
+
+| Evènement    | Action                                                              |
+| :----------- | :------------------------------------------------------------------ | 
+| `click`      | Quand l'utilisateur clique sur l'élément                            |
+| `mouseover`  | Quand l'utilisateur passe avec sa souris au-dessus d'un élément     |
+| `mouseout`   | Quand l'utilisateur sort avec sa souris d'un élément                |
+| `copy`       | Quand l'utilisateur copie un élément                                |
+| `cut`        | Quand l'utilisateur coupe un élément                                |
+| `paste`      | Quand l'utilisateur colle un élément                                |
