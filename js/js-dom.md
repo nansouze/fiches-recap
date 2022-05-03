@@ -57,7 +57,6 @@ document.body
 ⚠️ **WARNING**
 > Pas besoin de selectionner `body`.
 
-
 ### querySelectorAll [MDN](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelectorAll)
 
 ```js
@@ -133,6 +132,9 @@ helloWorld.textContent = "Hello World !";
 document.querySelector('.container').prepend(helloWorld); (avant)
 
 ```
+
+⚠️ **WARNING**
+> On peut enchainer les éléments `document.body.append(header, menu, p);`.
 
 ## Supprimer des éléments du DOM
 
