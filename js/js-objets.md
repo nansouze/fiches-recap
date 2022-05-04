@@ -215,9 +215,9 @@ console.log(dateLocale);
 ```js
 
 // Avant
-// let prenom = "John";
-// let bonjour = "Bonjour " + prenom;
-// console.log(bonjour);
+let prenom = "John";
+let bonjour = "Bonjour " + prenom;
+console.log(bonjour);
 
 // Maintenant
 let prenom = "John";
