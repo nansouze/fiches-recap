@@ -13,3 +13,4 @@
 - [BOM](js-bom.md)
 - [DOM](js-dom.md)
 - [Evénements](js-evt.md)
+- [POO](js-poo.md)
