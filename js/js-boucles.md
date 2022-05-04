@@ -91,6 +91,29 @@ for (const property in object) {
 
 ```
 
+⚠️ **WARNING**
+> Si l'on veut utiliser une boucle `for in` pour un tableau, il faut ruser avec l'index.
+
+```js
+
+const panier = ['fraise', 'banane', 'poire'];
+
+for (const fruit in panier) {
+  console.log(fruit); // 0 1 2
+}
+
+```
+
+```js
+
+const panier = ['fraise', 'banane', 'poire'];
+
+for (const fruit in panier) {
+  console.log(panier[fruit]); // fraise banane poire
+}
+
+```
+
 ## For Of (Array) [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/for...of)
 
 ```js
