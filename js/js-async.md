@@ -75,7 +75,7 @@ chargerScript('test.js')
 
 ```
 
-### Async & Await
+### Async & Await (sucres syntaxiques)
 
 ```js
 
