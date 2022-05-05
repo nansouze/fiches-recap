@@ -108,7 +108,7 @@ requete.onload = function() {
 
 ```
 
-## Amélioration avec Fetch & Axios
+## Amélioration avec Fetch
 
 ### Récupérer le prix du bitcoin (Fetch)
 
@@ -145,12 +145,71 @@ const url = 'https://lesoublisdelinfo.com/api.php';
 
 async function envoyerPrenom(prenom) {
   const requete = await fetch(url, {
+    method: 'POST', // PUT -> remplacer toute la donnée, PATCH -> modifier une partie la donnée, DELETE -> supprimer la donnée
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams({
+      prenom // prenom: prenom
+    })
+  });
+  
+  if(!requete.ok) {
+    alert('Un problème est survenu.');
+  }
+  else {
+    let donnees = await requete.json();
+    console.log(donnees);
+  }
+}
+
+envoyerPrenom('Elon');
+
+```
+
+## Amélioration avec Axios
+
+### Récupérer le prix du bitcoin (Axios)
+
+```js
+
+// URL
+const url = 'https://blockchain.info/ticker';
+
+async function recupererPrix() {
+ 
+  const requete = await fetch(url, {
+    method: 'GET'
+  });
+  
+  if(!requete.ok) {
+    alert('Un problème est survenu.');
+  } else {
+    let donnees = await requete.json();
+    console.log(donnees);
+    // document.querySelector('span').textContent = donnees.EUR.last;
+  }
+}
+
+setInterval(recupererPrix, 1000);
+
+```
+
+### Envoyer des données (Axios)
+
+```js
+
+// URL
+const url = 'https://lesoublisdelinfo.com/api.php';
+
+async function envoyerPrenom(prenom) {
+  const requete = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     body: new URLSearchParams({
-      prenom
+      prenom // prenom: prenom
     })
   });
   
