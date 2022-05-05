@@ -124,3 +124,6 @@ async function resultat(){
 resultat();
 
 ```
+
+⚠️ **WARNING**
+> Généralement, on utilise `async` devant une fonction pour nous retourner une promesse et pouvoir utiliser `await` à l'intérieur. Si on place `Await` devant une promesse, JS va devoir attendre qu'elle soit terminée. Si elle est rompue, il aura génération d'une exception.
