@@ -172,14 +172,30 @@ envoyerPrenom('Elon');
 
 ## Amélioration avec Axios
 
-### Librairie
+### Librairie [Axios Github](https://github.com/axios/axios)
 
-[Axios Github](https://github.com/axios/axios)
+`CODEPEN`
+ 
+<p align="center">
+  <img src='assets/img/Axios_Code_Pen.png'  width='70%'>
+</p>
 
-- Il est possible de l'utiliser directement via CodePen.
+`CDN`
 
-⚠️ **WARNING**
-> Il suffit d'aller dans la partie JS de `Pen Settings `.
+```html
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+```
+
+`NPM`
+
+```sh
+
+$ npm install axios
+
+```
+
 
 ### Récupérer le prix du bitcoin (Axios)
 
@@ -189,18 +205,18 @@ envoyerPrenom('Elon');
 const url = 'https://blockchain.info/ticker';
 
 async function recupererPrix() {
- 
-  const requete = await fetch(url, {
-    method: 'GET'
-  });
-  
-  if(!requete.ok) {
-    alert('Un problème est survenu.');
-  } else {
-    let donnees = await requete.json();
-    console.log(donnees);
-    // document.querySelector('span').textContent = donnees.EUR.last;
-  }
+
+  axios.get(url)
+    .then(function(donnees) {
+      console.log(donnees);
+      // document.querySelector('span').textContent = donnees.data.EUR.last; // Attention les données sont dans data
+    })
+    .catch(function(erreur) {
+      alert('Un problème est survenu');
+    })
+    .then(function () {
+      console.log('mise à jour effectuée');
+    });
 }
 
 setInterval(recupererPrix, 1000);
@@ -211,29 +227,21 @@ setInterval(recupererPrix, 1000);
 
 ```js
 
-// URL
-const url = 'https://lesoublisdelinfo.com/api.php';
+const axiosInstancePost = axios.create({
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  baseURL: 'https://lesoublisdelinfo.com/'
+});
 
-async function envoyerPrenom(prenom) {
-  const requete = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: new URLSearchParams({
-      prenom // prenom: prenom
-    })
-  });
-  
-  if(!requete.ok) {
-    alert('Un problème est survenu.');
-  }
-  else {
-    let donnees = await requete.json();
-    console.log(donnees);
-  }
-}
-
-envoyerPrenom('Elon');
+axiosInstancePost.post('api.php', new URLSearchParams({
+  prenom: 'Steve'
+}))
+  .then(function(donnees) {
+      console.log(donnees.data); // Attention les données sont dans data
+  })
+  .catch(function(erreur) {
+    console.log(erreur);
+  })
 
 ```
