@@ -172,6 +172,15 @@ envoyerPrenom('Elon');
 
 ## Amélioration avec Axios
 
+### Librairie
+
+[Axios Github](https://github.com/axios/axios)
+
+- Il est possible de l'utiliser directement via CodePen.
+
+⚠️ **WARNING**
+> Il suffit d'aller dans la partie JS de `Pen Settings `.
+
 ### Récupérer le prix du bitcoin (Axios)
 
 ```js
