@@ -78,6 +78,7 @@ setInterval(recupererPrix, 1000);
 
 ```js
 
+// URL
 const url = 'https://lesoublisdelinfo.com/api.php';
 
 let requete = new XMLHttpRequest();
@@ -104,5 +105,64 @@ requete.onload = function() {
     }
   }
 }
+
+```
+
+## Amélioration avec Fetch & Axios
+
+### Récupérer le prix du bitcoin (Fetch)
+
+```js
+
+// URL
+const url = 'https://blockchain.info/ticker';
+
+async function recupererPrix() {
+ 
+  const requete = await fetch(url, {
+    method: 'GET'
+  });
+  
+  if(!requete.ok) {
+    alert('Un problème est survenu.');
+  } else {
+    let donnees = await requete.json();
+    console.log(donnees);
+    // document.querySelector('span').textContent = donnees.EUR.last;
+  }
+}
+
+setInterval(recupererPrix, 1000);
+
+```
+
+### Envoyer des données (Fetch)
+
+```js
+
+// URL
+const url = 'https://lesoublisdelinfo.com/api.php';
+
+async function envoyerPrenom(prenom) {
+  const requete = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams({
+      prenom
+    })
+  });
+  
+  if(!requete.ok) {
+    alert('Un problème est survenu.');
+  }
+  else {
+    let donnees = await requete.json();
+    console.log(donnees);
+  }
+}
+
+envoyerPrenom('Elon');
 
 ```
