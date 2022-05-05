@@ -16,3 +16,4 @@
 - [POO](js-poo.md)
 - [API](js-api.md)
 - [Requêtes Asynchrones](js-async.md)
+- [Stocker Données Navigateur](js-store-data-browser.md)
