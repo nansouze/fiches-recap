@@ -145,7 +145,7 @@ const url = 'https://lesoublisdelinfo.com/api.php';
 
 async function envoyerPrenom(prenom) {
   const requete = await fetch(url, {
-    method: 'POST', // PUT -> remplacer toute la donnée, PATCH -> modifier une partie la donnée, DELETE -> supprimer la donnée
+    method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
@@ -166,6 +166,9 @@ async function envoyerPrenom(prenom) {
 envoyerPrenom('Elon');
 
 ```
+
+⚠️ **WARNING**
+> `PUT` -> remplacer toute la donnée, `PATCH` -> modifier une partie la donnée, `DELETE` -> supprimer la donnée.
 
 ## Amélioration avec Axios
 
