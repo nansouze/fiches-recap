@@ -49,7 +49,7 @@ document.cookie = 'prenom=John; path=/admin; domain=believemy.com; max-age=31536
 // LocalStorage = Stocké dans le navigateur même après qu'il soit fermé
 // SessionStorage = Stocké dans le navigateur pendant la session
 // Jamais envoyé au serveur
-// Donc on peut stocker beaucoup plus de donnée que dasn un cookie 
+// Donc on peut stocker beaucoup plus de donnée que dans un cookie 
 
 // Et les cookies ?
 // Généralement utilisé pour stocker un petit nombre de donnée
