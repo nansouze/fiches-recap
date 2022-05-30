@@ -125,3 +125,111 @@ $('p').css('color', 'green');
 
 ```
 
+
+### Modifier les attributs d'un élément
+
+```js
+
+// Avec JavaScript
+document.querySelector('h1').getAttribute('class');
+document.querySelector('h1').setAttribute('style', 'text-transform: lowercase');
+document.querySelectorAll('p');
+
+// Avec jQuery
+$('h1').attr('class'); // sélectionne un attribut
+$('h1').attr('style', 'text-transform: lowercase'); // ajoute ou modifie un attribut
+$('h1').after('<a href="https://wikipedia.com">Wikipedia</a>');
+$('a').attr('href', 'https://believemy.com');
+$('p');
+
+```
+
+
+### Ajouter des évènements
+
+```js
+
+// Avec JavaScript
+// document.querySelector('h1').addEventListener('click', () => {
+//   document.querySelector('h1').style.color = 'orange';
+// });
+// for(let i = 0; i < 2; i++) {
+//   document.querySelectorAll('p')[i].addEventListener('click', () => {
+//     document.querySelector('h1').style.color = 'orange';
+//   });
+// }
+
+// Avec jQuery
+// $('h1').click(() => {
+//   $('h1').css('color', 'orange');
+// });
+
+$('p').click(() => {
+  $('h1').css('color', 'orange');
+});
+
+// Pour utiliser les mêmes évènements JavaScript (plus facile)
+$('h1').on('mouseover', () => {
+  $('#monId').addClass('important');
+});
+
+```
+
+### Faire des requêtes AJAX
+
+```js
+
+// let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
+// requete.open('GET', url); // Nous récupérons juste des données
+// requete.responseType = 'json'; // Nous attendons du JSON
+// requete.send(); // Nous envoyons notre requête
+
+// // Dès qu'on reçoit une réponse, cette fonction est executée
+// requete.onload = function() {
+//    if (requete.readyState === XMLHttpRequest.DONE) {
+//       if (requete.status === 200) {
+//         let reponse = requete.response;
+//         // console.log(reponse);
+//         let temperature = reponse.main.temp;
+//         let ville       = reponse.name;
+//         // console.log(temperature);
+//         document.querySelector('#temperature_label').textContent = temperature;
+//         document.querySelector('#ville').textContent = ville;
+//       }
+//       else {
+//         alert('Un problème est intervenu, merci de revenir plus tard.');
+//       }
+//     }
+// }
+
+const url = 'https://blockchain.info/ticker';
+
+$.ajax({
+  url: url,
+  type: 'GET',
+  dataType: 'json',
+  success: (data) => {
+    // console.log(data);
+    $('h1').text(data.EUR.last + ' euros');
+  },
+  error: () => {
+    alert('Merci de revenir plus tard.');
+  }
+});
+
+const url_bis = 'https://lesoublisdelinfo.com/api.php';
+
+$.ajax({
+  url: url_bis,
+  type: 'POST',
+  data: 'prenom=John',
+  dataType: 'json',
+  success: (data) => {
+    $('#monId').text(data.resultat);
+  },
+  error: () => {
+    alert('Merci de revenir plus tard.');
+  }
+});
+
+```
