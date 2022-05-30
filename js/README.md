@@ -17,4 +17,5 @@
 - [API](js-api.md)
 - [Requêtes Asynchrones](js-async.md)
 - [Stocker Données Navigateur](js-store-data-browser.md)
-- [JQuery](js-jquery.md)
+- [jQuery](js-jquery.md)
+- [Modules](js-modules.md)
