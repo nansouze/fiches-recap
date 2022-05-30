@@ -19,6 +19,3 @@ direBonjour('John'); // affiche 'Bonjour John'
 
 ⚠️ **WARNING**
 > Impossible d'utiliser les modules si vous n'avez pas de serveur, la plupart des navigateurs bloquent les modules pour notre sécurité s'ils ne sont pas executés sur des serveurs.
-
-
-
