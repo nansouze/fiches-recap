@@ -48,7 +48,17 @@ bower install https://code.jquery.com/jquery-3.6.0.min.js # compressed release
 
 ### CodePen
 
-**Methode 1:** On va dans l'engrenage `HTML` et on ajoute une balise `script` dans le `head`.
+**Methode 1:** On va dans la catégorie (engrenage) `HTML` et on ajoute une balise `script` dans le `head`.
+
+<p align="center">
+  <img src='assets/img/Jquery_Code_Pen.png'  width='70%'>
+</p>
+
+**Methode 2:** On va dans la catégorie (engrenage) `JavaScript` et on cherche le bon CDN.
+
+<p align="center">
+  <img src='assets/img/Jquery_Code_Pen2.png'  width='70%'>
+</p>
 
 
 ⚠️ **WARNING**
