@@ -30,6 +30,8 @@ console.log(coordonnees.longitude); // 139
 ⚠️ **WARNING**
 > On utilise les objets litéraux, pour transmettre rapidement des informations.
 
+> `mark` est une variable qui contient un objet. Et non pas mark est un objet (abus de langage).
+
 ## Création objet avec un constructeur personnalisé
 
 ```js
