@@ -28,7 +28,7 @@ console.log(coordonnees.longitude); // 139
 ```
 
 ⚠️ **WARNING**
-> On utilise les objets litéraux, pour transmettre des informations.
+> On utilise les objets litéraux, pour transmettre rapidement des informations.
 
 ## Création objet avec un constructeur personnalisé
 
