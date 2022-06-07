@@ -50,7 +50,7 @@ const url = 'https://blockchain.info/ticker';
 function recupererPrix() {
   // Créer une requête
   let requete = new XMLHttpRequest(); // Créer un objet
-  requete.open('GET', url); // Premier paramètre GET / POST, deuxième paramètr : url
+  requete.open('GET', url); // Premier paramètre GET / POST, deuxième paramètre : url
   requete.responseType = 'json'; // Nous attendons du JSON
   requete.send(); // Nous envoyons notre requête
 
