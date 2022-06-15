@@ -2,3 +2,5 @@
 
 - [Utilisation](utilisation.md)
 - [Couleurs](couleurs.md)
+- [Sizing](sizing.md)
+- [Spacing](spacing.md)
