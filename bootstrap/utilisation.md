@@ -33,3 +33,12 @@
 </html>
 
 ```
+
+## CodePen
+
+On va dans la catégorie (engrenage) `CSS` et on cherche le bon CDN. C'est possible que la dernière version ne soit pas présente. Sinon, on colle url de la feuille de style directement.
+
+<p align="center">
+  <img src='assets/img/Bootstrap_Code_Pen.png'  width='70%'>
+</p>
+
