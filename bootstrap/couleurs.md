@@ -1,7 +1,5 @@
 # Couleurs
 
-## Ajouter des couleurs
-
 <p align="center">
   <img src='assets/img/Bootstrap_Colors.png'  width='80%'>
 </p>
